@@ -2,8 +2,8 @@
 layout: home
 permalink: "/"
 title: "Astrophotography by Justin Tolboe"
-description: "Justin Tolboe's astrophotography portfolio."
-meta_description: "Jekyll Curate is a premium Jekyll blog theme"
+description: 
+meta_description: "Justin Tolboe's astrophotography portfolio."
 meta_title: "Astrophotography - Justin Tolboe"
 subscribe: false
 
