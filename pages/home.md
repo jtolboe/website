@@ -1,10 +1,10 @@
 ---
 layout: home
 permalink: "/"
-title: "Curate is a premium portfolio for <strong>Jekyll.</strong>"
-description: "Showcase your projects, work or case studies in style with this markdown powered portfolio theme for Jekyll."
+title: "Astrophotography by Justin Tolboe"
+description: "Justin Tolboe's astrophotography portfolio."
 meta_description: "Jekyll Curate is a premium Jekyll blog theme"
-meta_title: Jekyll Curate - Premium Portfolio Theme
+meta_title: "Astrophotography - Justin Tolboe"
 subscribe: false
 
 projects:
@@ -14,7 +14,7 @@ projects:
   sort: date # date | weight
   view_more_button_text: "" # "More Projects"
   view_more_button_link: "" # "/projects"
-  columns: 2 # 1 | 2 | 3 | 4
+  columns: 3 # 1 | 2 | 3 | 4
 
 posts:
   heading: "Recent Posts"
