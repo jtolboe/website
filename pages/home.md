@@ -14,12 +14,12 @@ projects:
   sort: date # date | weight
   view_more_button_text: "" # "More Projects"
   view_more_button_link: "" # "/projects"
-  columns: 3 # 1 | 2 | 3 | 4
+  columns: 2 # 1 | 2 | 3 | 4
 
 posts:
   heading: "Recent Posts"
   sub_heading: ""
-  limit: 3
+  limit: 2
   sort: date # date | weight
   view_more_button_text: ""
   view_more_button_link: "" # "/blog"
