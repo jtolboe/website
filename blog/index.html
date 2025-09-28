@@ -1,7 +1,7 @@
 ---
 layout: default
 body_classes: page-blog
-title: "Blog"
+title: ""
 ---
 
 <div class="section">
@@ -14,44 +14,33 @@ title: "Blog"
         %}
       </div>
     </div>
-  </div>
-</div>
-
-<div class="section pt-0">
-  <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-12">
-          <div class="row">
-            {% assign posts = site.posts %}
-            {% if paginator %}{% assign posts = paginator.posts %}{% endif %}
-            
-              {% if paginator %}
-                <div class="col-12">
-                  {% include framework/paginator-count.html %}
-                </div>
-              {% endif %}
-
-              {% for post in posts %}
-                <div class="col-12 col-md-12 col-lg-10 mb-6">
-                  {% include theme/cards/card-post.html
-                    date=post.date
-                    title=post.title
-                    description=post.description 
-                    url=post.url
-                    thumbnail=post.thumbnail
-                    style="row"
-                  %}
-                </div>
-              {% endfor %}
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8">
+        {% assign all_items = site.projects | concat: site.posts | sort: 'date' | reverse %}
+        {% for item in all_items %}
+          <div class="mb-6">
+            {% if item.collection == 'projects' %}
+              {% include theme/cards/card-post.html
+                date=item.date
+                title=item.title
+                description=item.description
+                url=item.url
+                thumbnail=item.thumbnail
+                style="row"
+              %}
+            {% else %}
+              {% include theme/cards/card-post.html
+                date=item.date
+                title=item.title
+                description=item.description
+                url=item.url
+                thumbnail=item.thumbnail
+                style="row"
+              %}
+            {% endif %}
           </div>
-        </div>
+        {% endfor %}
       </div>
-      {% if paginator %}
-      <div class="row justify-content-center mt-4">
-        <div class="col-auto">
-          {% include framework/paginator.html %}
-        </div>
-      </div>
-      {% endif %}
+    </div>
   </div>
 </div>
