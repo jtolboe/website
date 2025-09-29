@@ -79,11 +79,11 @@ colors:
   base_bg: "#fdfcf9"
   base_bg_2: "#f7f6ed"
   base_bg_3: "#faebd7"
-  base_text: "#0d042b"
-  base_text_2: "#3b364c"
-  logo_text: "#0d042b"
-  header_text: "#0d042b"
-  footer_bg: "#090101"
+  base_text: "#000000"
+  base_text_2: "#000000"
+  logo_text: "#000000"
+  header_text: "#000000"
+  footer_bg: "#101631"
   footer_text: "#fdfcf9"
 
   # dark-mode colors

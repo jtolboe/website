@@ -48,6 +48,27 @@
     }
 }
 
+// Style dark mode switcher
+.dark-mode-switcher {
+    background-color: transparent;
+    
+    .dark-mode-switch {
+        background-color: var(--color-base-bg-2);
+        
+        html[data-bs-theme="dark"] & {
+            background-color: var(--color-base-bg-2-dark);
+        }
+    }
+    
+    .ball {
+        background-color: var(--color-base-bg);
+        
+        html[data-bs-theme="dark"] & {
+            background-color: var(--color-base-bg-dark);
+        }
+    }
+}
+
 // Style the bottom section
 .bottom {
     background-color: var(--color-primary-bg);
