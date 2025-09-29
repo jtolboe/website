@@ -18,3 +18,32 @@
         margin-bottom: 2rem;
     }
 }
+
+// Add separator line to header
+.header {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2); // subtle gray line
+    
+    html[data-bs-theme="dark"] & {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); // more subtle line in dark mode
+    }
+}
+
+// Center the header menu
+.header {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .menu-main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            
+            ul {
+                justify-content: center;
+                margin: 0 auto;
+            }
+        }
+    }
+}
