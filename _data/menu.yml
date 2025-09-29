@@ -20,6 +20,9 @@ footer_primary:
   
 
 footer_secondary:
+  - name: Gallery
+    url: /projects/
+    weight: 1
   - name: Blog
     url: /blog/
     weight: 2

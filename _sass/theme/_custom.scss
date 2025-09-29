@@ -19,17 +19,14 @@
     }
 }
 
-// Add separator line to header
+// Header styles
 .header {
-    border-bottom: 1px solid rgba(128, 128, 128, 0.2); // subtle gray line
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
     
     html[data-bs-theme="dark"] & {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1); // more subtle line in dark mode
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
-}
 
-// Center the header menu
-.header {
     .container {
         display: flex;
         justify-content: space-between;
@@ -76,7 +73,7 @@
     padding: 0.5rem 0;
     
     html[data-bs-theme="dark"] & {
-        background-color: #050815;
+        background-color: #020206;
         color: var(--color-primary-text-dark);
     }
     
@@ -99,23 +96,26 @@
     }
 }
 
-// Make footer navigation horizontal
+// Make footer navigation horizontal and single row
 .footer {
     .footer-menu {
         ul {
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-end;
+            flex-wrap: nowrap;
+            justify-content: center;
             list-style: none;
             margin: 0;
             padding: 0;
+            gap: 1.5rem;
             
             li {
-                margin: 0 0 0 1.5rem;
+                margin: 0;
+                white-space: nowrap;
                 
-                &:first-child {
-                    margin-left: 0;
+                a {
+                    display: inline-block;
+                    padding: 0 0.25rem;
                 }
             }
         }
