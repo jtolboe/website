@@ -69,5 +69,34 @@
     .copyright {
         margin: 0;
         padding: 0;
+        
+        br {
+            display: block;
+            content: "";
+            margin-top: 0.3rem;
+        }
+    }
+}
+
+// Make footer navigation horizontal
+.footer {
+    .footer-menu {
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            
+            li {
+                margin: 0 0 0 1.5rem;
+                
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
     }
 }
