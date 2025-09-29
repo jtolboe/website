@@ -8,3 +8,13 @@
         text-decoration-color: var(--color-base-bg-3);
     }
 }
+
+// Reduce spacing between heading and content
+.section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+    .section-heading {
+        margin-bottom: 2rem;
+    }
+}
