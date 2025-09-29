@@ -1,8 +1,12 @@
 .footer {
   padding-top: calc(var(--section-padding) * 0.5);
   padding-bottom: calc(var(--section-padding) * 0.5);
-  background-color: #090101;
-  color: var(--color-base-text);
+  background-color: var(--color-primary-bg);
+  color: var(--color-primary-text);
+  html[data-bs-theme="dark"] & {
+    background-color: #050815;
+    color: var(--color-primary-text-dark);
+  }
   font-size: 15px;
   a {
     color: inherit;

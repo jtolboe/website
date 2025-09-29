@@ -1,0 +1,9 @@
+:root {
+  --color-footer-bg: {{ site.colors.footer_bg }};
+  --color-footer-text: {{ site.colors.footer_text }};
+}
+
+[data-bs-theme="dark"] {
+  --color-footer-bg: {{ site.colors.footer_bg_dark }};
+  --color-footer-text: {{ site.colors.footer_text_dark }};
+}

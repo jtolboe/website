@@ -15,6 +15,9 @@
     font-weight: 500;
     color: var(--color-primary-bg);
     font-family: var(--font-family-base);
+    html[data-bs-theme="dark"] & {
+      color: var(--color-base-text-dark);
+    }
   }
 }
 .grid-header {
