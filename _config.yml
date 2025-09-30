@@ -94,8 +94,8 @@ colors:
   base_bg_dark: "#232323"
   base_bg_2_dark: "#150c32"
   base_bg_3_dark: "#251654"
-  base_text_dark: "#d9d9d9"  # approximately 85% white
-  base_text_2_dark: "#929eaf"  # keeping secondary text as is since it's already more muted
+  base_text_dark: "#d9d9d9"  
+  base_text_2_dark: "#929eaf"  
   logo_text_dark: "#d9d9d9"    # matching the base text
   header_text_dark: "#d9d9d9"  # matching the base text
   footer_bg_dark: "#101631"
@@ -112,7 +112,7 @@ fonts:
 
 logo:
   logo_text: "Jekyll Curate"
-  logo_image: assets/images/logo/logo.png
+  logo_image: assets/images/logo/logo.svg
   logo_image_mobile: assets/images/logo/logo-mobile.png
   logo_image_invert: assets/images/logo/logo-invert.png
   logo_image_invert_mobile: assets/images/logo/logo-invert-mobile.png
