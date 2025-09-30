@@ -94,10 +94,10 @@ colors:
   base_bg_dark: "#232323"
   base_bg_2_dark: "#150c32"
   base_bg_3_dark: "#251654"
-  base_text_dark: "#e6e6e6"
-  base_text_2_dark: "#929eaf"
-  logo_text_dark: "#e6e6e6"
-  header_text_dark: "#e6e6e6"
+  base_text_dark: "#d9d9d9"  # approximately 85% white
+  base_text_2_dark: "#929eaf"  # keeping secondary text as is since it's already more muted
+  logo_text_dark: "#d9d9d9"    # matching the base text
+  header_text_dark: "#d9d9d9"  # matching the base text
   footer_bg_dark: "#101631"
   footer_text_dark: "#fdfcf9"
 
