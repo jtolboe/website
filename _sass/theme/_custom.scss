@@ -35,7 +35,10 @@ h1, h2, h3, h4, h5, h6 {
 
 // Header styles
 .header {
+    background-color: #020206 !important;
     border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    color: #fdfcf9 !important;
+    padding: 1.5rem 0 !important;
     
     html[data-bs-theme="dark"] & {
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -55,6 +58,16 @@ h1, h2, h3, h4, h5, h6 {
                 justify-content: center;
                 margin: 0 auto;
             }
+
+            a {
+                color: var(--color-footer-text) !important;
+            }
+        }
+    }
+
+    .logo {
+        a {
+            color: var(--color-footer-text) !important;
         }
     }
 }
