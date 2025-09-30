@@ -1,23 +1,23 @@
 // Apply Roboto Slab as the main font
 :root {
-    --font-family-base: 'Roboto Slab', serif;
-    --font-family-heading: 'Roboto Slab', serif;
+    --font-family-base: 'Roboto Slab', serif !important;
+    --font-family-heading: 'Roboto Slab', serif !important;
 }
 
 body {
-    font-family: var(--font-family-base);
+    font-family: var(--font-family-base) !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-family-heading);
+    font-family: var(--font-family-heading) !important;
 }
 
 .heading .heading-heading h1 {
     font-size: 36px;
     line-height: 1;
     width: 80%;
-    letter-spacing: -2px;
-    font-weight: 700;
+    letter-spacing: -0.5px;
+    font-weight: 500;
     strong {
         text-decoration-color: var(--color-base-bg-3);
     }
