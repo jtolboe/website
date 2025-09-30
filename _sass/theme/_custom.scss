@@ -111,10 +111,47 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Make footer navigation horizontal and single row
+// Style the footer social icons and navigation
 .footer {
-    .footer-menu {
+    .container {
+        .row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            > div {
+                width: 100%;
+            }
+        }
+    }
+
+    .footer-info {
+        text-align: center;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        width: 100%;
+        
         ul {
             display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    }
+
+    .footer-menu {
+        text-align: center;
+        width: 100%;
+
+        ul {
+            display: inline-flex;
             flex-direction: row;
             flex-wrap: nowrap;
             justify-content: center;
@@ -133,5 +170,24 @@ h1, h2, h3, h4, h5, h6 {
                 }
             }
         }
+    }
+
+    // Override Bootstrap grid classes
+    .col-12, .col-md-4, .col-md-8, .justify-content-end {
+        width: 100% !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+
+    .row.justify-content-end {
+        justify-content: center !important;
+    }
+}
+
+// Add spacing under the bottom section
+.bottom {
+    .container {
+        padding-bottom: 1rem;
     }
 }
