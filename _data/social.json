@@ -11,7 +11,7 @@
   },
   {
     "title": "Astrobin",
-    "fa_icon": "fab fa-astrobin",
+    "custom_icon": "/assets/images/icons/astrobin.png",
     "url": "https://app.astrobin.com/u/justintastro#gallery"
   }
 ]

@@ -13,23 +13,14 @@
 {% assign thumbnail_size = include.thumbnail_size %}
 
 <div class="card card-project card-{{ style }} {% if thumbnail %}card-has-thumbnail{% endif %} {% if icon or fa_icon %}card-has-icon{% endif %}">
-
   {% if thumbnail %}
     <div class="card-thumbnail {% if thumbnail_size %}card-thumbnail-{{ thumbnail_size }}{% endif %}">
-      <a href="{{ url | relative_url }}"><img alt="{{ title }}" src="{{ thumbnail | relative_url }}"/></a>
+      <a href="{{ url | relative_url }}" class="image-container">
+        <img alt="{{ title }}" src="{{ thumbnail | relative_url }}"/>
+        <div class="image-overlay">
+          <h2 class="image-title">{{ title }}</h2>
+        </div>
+      </a>
     </div>
   {% endif %}
-
-  <div class="card-content">
-    <div class="card-title">
-      <h2>
-        <a href="{{ url | relative_url }}">{{ title }}</a>
-      </h2>
-    </div>
-    {% if client %}
-      <div class="card-client">
-        {{ client }}
-      </div>
-    {% endif %}
-  </div>
 </div>

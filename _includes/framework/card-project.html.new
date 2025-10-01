@@ -1,0 +1,26 @@
+{% assign title = include.title %}
+{% assign description = include.description %}
+{% assign thumbnail = include.thumbnail %}
+{% assign icon = include.icon %}
+{% assign fa_icon = include.fa_icon %}
+{% assign url = include.url %}
+{% assign date = include.date %}
+{% assign authors = include.authors %}
+{% assign categories = include.categories %}
+{% assign style = include.style | default: "column" %}
+{% assign show_read_more = include.show_read_more %}
+{% assign client = include.client %}
+{% assign thumbnail_size = include.thumbnail_size %}
+
+<div class="card card-project card-{{ style }} {% if thumbnail %}card-has-thumbnail{% endif %} {% if icon or fa_icon %}card-has-icon{% endif %}">
+  {% if thumbnail %}
+    <div class="card-thumbnail {% if thumbnail_size %}card-thumbnail-{{ thumbnail_size }}{% endif %}">
+      <a href="{{ url | relative_url }}" class="image-container">
+        <img alt="{{ title }}" src="{{ thumbnail | relative_url }}"/>
+        <div class="image-overlay">
+          <h2 class="image-title">{{ title }}</h2>
+        </div>
+      </a>
+    </div>
+  {% endif %}
+</div>

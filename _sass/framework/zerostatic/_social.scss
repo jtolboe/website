@@ -12,5 +12,13 @@
     &:hover {
       opacity: 0.8;
     }
+    .social-icon {
+      width: 1.2em;
+      height: 1.2em;
+      display: inline-block;
+      vertical-align: -0.125em;  // This aligns with Font Awesome's baseline
+      position: relative;
+      top: -1px;  // Fine-tune the vertical position
+    }
   }
 }

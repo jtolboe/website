@@ -3,13 +3,61 @@
   font-size: var(--header-font-size);
   background-color: var(--color-base-bg);
   color: var(--color-header-text);
+  position: relative;
+  &.header-with-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.3); // Adds a dark overlay to improve text visibility
+      z-index: 1;
+    }
+    .container {
+      position: relative;
+      z-index: 2;
+    }
+  }
   .container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     height: var(--header-height);
+    padding: 0 1rem;
+    
     .logos {
-      margin-right: auto;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      
+      .header-social {
+        .social {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          margin: 0;
+          padding: 0;
+          font-size: 1.1em;
+          
+          a {
+            color: inherit;
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+      }
     }
   }
   a {

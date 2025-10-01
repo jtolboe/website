@@ -37,10 +37,9 @@ body_classes: page-projects
         sub_heading=page.projects.sub_heading 
       %}
      
-      {% for card in cards limit: limit %}
-      <div
-        class="col-12 col-md-6 {{ columns }} mb-gutter mt-gutter {% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mt-md-0">
-        {% include theme/cards/card-project.html
+      <div class="project-grid">
+        {% for card in cards limit: limit %}
+          {% include framework/card-project.html
           title=card.title
           description=card.description
           thumbnail=card.thumbnail
@@ -49,8 +48,8 @@ body_classes: page-projects
           url=card.url
           client=card.client
         %}
-      </div>
       {% endfor %}
+      </div>
 
       {% include framework/grid-footer.html 
         view_more_button_text=page.projects.view_more_button_text

@@ -67,7 +67,7 @@ exclude:
 # -------------------
 # Theme Config
 # --------------------
-title: "Jekyll Curate"
+title: "Justin Tolboe"
 category_dir: category
 
 colors:
@@ -111,22 +111,23 @@ fonts:
   logo: "'DM Sans'"
 
 logo:
-  logo_text: "Jekyll Curate"
+  logo_text: "Justin Tolboe Astrophotography"
   logo_image: assets/images/logo/logo.svg
   logo_image_mobile: assets/images/logo/logo-mobile.png
   logo_image_invert: assets/images/logo/logo-invert.png
   logo_image_invert_mobile: assets/images/logo/logo-invert-mobile.png
-  logo_image_desktop_height: "28px"
-  logo_image_desktop_width: "28px"
+  logo_image_desktop_height: "36px"
+  logo_image_desktop_width: "36px"
   logo_image_mobile_height: "28px"
   logo_image_mobile_width: "28px"
   show_logo_image_on_mobile: true
   show_logo_image_on_desktop: true
   show_logo_text_on_mobile: false
-  show_logo_text_on_desktop: false
+  show_logo_text_on_desktop: true
 
 header: 
   fixed: false
+  background_image: "/assets/images/gen/projects/m31_header.jpg"
 
 open_graph:
   meta_opengraph_type: "website"
