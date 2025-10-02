@@ -177,7 +177,7 @@ footer:
   enable_footer: true # show/hide the entire footer
   footer_title: ""
   footer_description: ""
-  enable_social_media_icons: true
+  enable_social_media_icons: false
   enable_contact_details: false
   enable_menu_footer_primary: false
   enable_menu_footer_secondary: true
@@ -189,5 +189,5 @@ footer:
 bottom:
   enable_bottom: true # show/hide the entire bottom (below the footer)
   enable_bottom_menu: false # if enabled, the bottom menu can be edited in `_data/menu.yml`
-  copyright_text: "© 2025 All Rights Reserved<br>Template by Zerostatic, modified by Justin Tolboe"
+  copyright_text: "© 2025 Template by Zerostatic, modified by Justin Tolboe"
   show_rss_icon: false
