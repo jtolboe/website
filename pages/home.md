@@ -10,11 +10,11 @@ subscribe: false
 projects:
   heading: "Text" # "Projects"
   sub_heading: "" # "A collection of our recent work"
-  limit: 1
+  limit: 4
   sort: date # date | weight
   view_more_button_text: "All Images"
   view_more_button_link: "/projects"
-  columns: 1 # 1 | 2 | 3 | 4
+  columns: 2 # 1 | 2 | 3 | 4
 
 posts:
   heading: "Recent Posts"
