@@ -3,7 +3,7 @@ layout: project
 title: "Embryo Nebula"
 description: "Placeholder text"
 date: 2018-11-03T10:20:00Z
-weight: 1
+weight: 2
 thumbnail: "/assets/images/gen/projects/embryo_thumb.jpg"
 image: "/assets/images/gen/projects/project-1-2.webp"
 categories: ["Development"]
