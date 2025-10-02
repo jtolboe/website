@@ -15,11 +15,23 @@ h1, h2, h3, h4, h5, h6 {
 .heading .heading-heading h1 {
     font-size: 36px;
     line-height: 1;
-    width: 80%;
+    width: 100%;
     letter-spacing: -0.5px;
     font-weight: 500;
+    text-align: center;
     strong {
         text-decoration-color: var(--color-base-bg-3);
+    }
+}
+
+.heading.heading-center {
+    .heading-heading {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        h1 {
+            margin: 0 auto;
+        }
     }
 }
 
