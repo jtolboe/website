@@ -12,3 +12,4 @@ projects:
   view_more_button_link: "" # "/projects"
   columns: 3 # 1 | 2 | 3 | 4
 ---
+  

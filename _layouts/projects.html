@@ -37,7 +37,7 @@ body_classes: page-projects
         sub_heading=page.projects.sub_heading 
       %}
      
-      <div class="project-grid">
+      <div class="project-grid" data-columns="{{ page.projects.columns | default: 3 }}">
         {% for card in cards limit: limit %}
           {% include framework/card-project.html
           title=card.title
