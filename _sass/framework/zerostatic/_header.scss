@@ -4,6 +4,12 @@
   background-color: var(--color-base-bg);
   color: var(--color-header-text);
   position: relative;
+  padding: 0.5rem 0;
+
+  @media (max-width: 767px) {
+    padding: 0.25rem 0;
+  }
+
   &.header-with-background {
     background-size: cover;
     background-position: center;
@@ -15,7 +21,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(0, 0, 0, 0.3); // Adds a dark overlay to improve text visibility
+      background: rgba(0, 0, 0, 0.3);
       z-index: 1;
     }
     .container {
@@ -27,8 +33,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: var(--header-height);
+    min-height: var(--header-height);
     padding: 0 1rem;
+
+    @media (max-width: 767px) {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
     
     .logos {
       display: flex;
@@ -41,7 +53,27 @@
       align-items: center;
       gap: 1.5rem;
       
+      @media (max-width: 767px) {
+        gap: 0.5rem;
+      }
+      
+      .menu-main {
+        @media (max-width: 767px) {
+          display: none !important;
+        }
+      }
+
+      .menu-main {
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
+
       .header-social {
+        @media (max-width: 767px) {
+          display: none;
+        }
+        
         .social {
           display: flex;
           align-items: center;

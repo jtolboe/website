@@ -48,6 +48,10 @@ defaults:
       permalink: /category/:basename/
   - scope:
       path: "pages"
+
+defaults:
+  - scope:
+      path: "pages"
     values:
       permalink: /:basename/
 
@@ -112,17 +116,17 @@ fonts:
 
 logo:
   logo_text: "Justin Tolboe"
-  logo_image: assets/images/logo/logo.svg
-  logo_image_mobile: assets/images/logo/logo-mobile.png
-  logo_image_invert: assets/images/logo/logo-invert.png
-  logo_image_invert_mobile: assets/images/logo/logo-invert-mobile.png
+  logo_image: "/assets/images/logo/logo.svg"
+  logo_image_mobile: "/assets/images/logo/logo.svg"
+  logo_image_invert: "/assets/images/logo/logo.svg"
+  logo_image_invert_mobile: "/assets/images/logo/logo.svg"
   logo_image_desktop_height: "36px"
   logo_image_desktop_width: "36px"
   logo_image_mobile_height: "28px"
   logo_image_mobile_width: "28px"
   show_logo_image_on_mobile: true
   show_logo_image_on_desktop: true
-  show_logo_text_on_mobile: false
+  show_logo_text_on_mobile: true
   show_logo_text_on_desktop: true
 
 header: 
