@@ -59,6 +59,30 @@ body_classes: page-project
             <strong>{{ page.role_label | default: "Role" }} </strong><span>{{ page.role }}</span>
           </div>
         {% endif %}
+        {% if page.stats_table %}
+          <div class="project-stats-table mt-4">
+            <table class="table table-sm">
+              {% if page.stats_table.headers %}
+              <thead>
+                <tr>
+                  {% for header in page.stats_table.headers %}
+                    <th>{{ header }}</th>
+                  {% endfor %}
+                </tr>
+              </thead>
+              {% endif %}
+              <tbody>
+                {% for row in page.stats_table.rows %}
+                  <tr>
+                    {% for cell in row %}
+                      <td>{{ cell }}</td>
+                    {% endfor %}
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        {% endif %}
       </div>
       <div class="col-12 col-md-6 mb-4">
         <div class="content">{{ content }}</div>
