@@ -94,7 +94,7 @@ colors:
   primary_bg_dark: "#232323"
   primary_bg_2_dark: "#232323"
   primary_bg_3_dark: "#232323"
-  primary_text_dark: "#0b0326"
+  primary_text_dark: "#d9d9d9"
   base_bg_dark: "#232323"
   base_bg_2_dark: "#150c32"
   base_bg_3_dark: "#251654"
