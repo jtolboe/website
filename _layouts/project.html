@@ -51,12 +51,12 @@ body_classes: page-project
         {% endif %}
         {% if page.client %}
           <div class="project-client">
-            <strong>Client </strong><span>{{ page.client }}</span>
+            <strong>{{ page.client_label | default: "Client" }} </strong><span>{{ page.client }}</span>
           </div>
         {% endif %}
         {% if page.role %}
           <div class="project-role">
-            <strong>Role </strong><span>{{ page.role }}</span>
+            <strong>{{ page.role_label | default: "Role" }} </strong><span>{{ page.role }}</span>
           </div>
         {% endif %}
       </div>

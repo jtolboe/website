@@ -95,7 +95,8 @@
     strong {
       display: inline-block;
       font-weight: 600;
-      width: 70px;
+      min-width: 100px;
+      margin-right: 10px;
     }
     span {
       display: inline-block;
