@@ -59,8 +59,16 @@ body_classes: page-project
             <strong>{{ page.role_label | default: "Role" }} </strong><span>{{ page.role }}</span>
           </div>
         {% endif %}
+        {% if page.time %}
+          <div class="project-time">
+            <strong>{{ page.time_label | default: "Time" }} </strong><span>{{ page.time }}</span>
+          </div>
+        {% endif %}
         {% if page.stats_table %}
           <div class="project-stats-table mt-4">
+            {% if page.stats_table.title %}
+              <div class="table-title">{{ page.stats_table.title }}</div>
+            {% endif %}
             <table class="table table-sm">
               {% if page.stats_table.headers %}
               <thead>

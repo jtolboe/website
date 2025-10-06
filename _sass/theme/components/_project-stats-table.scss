@@ -1,0 +1,56 @@
+.project-stats-table {
+  max-width: 400px;  // Limit overall table width
+  
+  .table-title {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: inherit;
+  }
+
+  .table {
+    background: rgba(54, 52, 52, 0.05);
+    color: inherit;
+    font-size: 0.9rem;
+    table-layout: fixed;  // This helps control column widths
+    
+    th, td {
+      padding: 0.5rem;  // Reduced padding
+      border-color: rgba(255, 255, 255, 0.1);
+      vertical-align: middle;
+      line-height: 1.2;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+    th {
+      font-weight: 600;
+      border-bottom-width: 2px;
+    }
+
+    // Define column widths
+    th:nth-child(1) { width: 40%; }  // Filter column
+    th:nth-child(2) { width: 25%; }  // Count column
+    th:nth-child(3) { width: 35%; }  // Time column
+    
+    td {
+      font-size: 0.9rem; // Ensure consistent font size
+      
+      &:first-child {
+        font-weight: 500;
+      }
+      
+      &:not(:first-child) {
+        text-align: right;
+      }
+
+      // Special handling for longer text
+      &[colspan] {
+        text-align: left;
+        padding-left: 0.5rem;
+        white-space: normal;
+      }
+    }
+  }
+}
