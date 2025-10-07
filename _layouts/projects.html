@@ -44,7 +44,10 @@ body_classes: page-projects
      
       <div class="project-grid" data-columns="{{ page.projects.columns | default: 3 }}">
         {% for card in cards limit: limit %}
-          <div class="project-item" data-tags="{% if card.tags %}{% for tag in card.tags %}{% if tag != "" and tag != nil %}{{ tag | downcase | slugify }} {% endif %}{% endfor %}{% endif %}">
+          <div class="project-item" 
+            data-project-title="{{ card.title }}"
+            data-tags="{{ card.tags | join: ',' | strip }}"
+          >
             {% include framework/card-project.html
             title=card.title
             description=card.description

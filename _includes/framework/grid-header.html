@@ -14,22 +14,21 @@
       {% if include.show_filters %}
       <div class="project-filters">
         <button class="btn btn-filter active" data-filter="all">All</button>
+        {% comment %}Build unique tag list{% endcomment %}
         {% assign project_tags = "" | split: "" %}
         {% for project in site.projects %}
           {% if project.tags %}
-            {% assign valid_tags = "" | split: "" %}
             {% for tag in project.tags %}
               {% if tag != "" and tag != nil %}
-                {% assign valid_tags = valid_tags | push: tag %}
+                {% assign project_tags = project_tags | push: tag %}
               {% endif %}
             {% endfor %}
-            {% assign project_tags = project_tags | concat: valid_tags | uniq %}
           {% endif %}
         {% endfor %}
-        {% assign sorted_tags = project_tags | sort %}
+        {% assign sorted_tags = project_tags | uniq | sort %}
         {% for tag in sorted_tags %}
           {% if tag != "" and tag != nil %}
-            <button class="btn btn-filter" data-filter="{{ tag | slugify }}">{{ tag }}</button>
+            <button class="btn btn-filter" data-filter="{{ tag }}">{{ tag }}</button>
           {% endif %}
         {% endfor %}
       </div>

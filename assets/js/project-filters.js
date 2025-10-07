@@ -12,14 +12,17 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Filter projects
             projectItems.forEach(item => {
-                const tags = item.getAttribute('data-tags');
+                const tagsAttr = item.getAttribute('data-tags');
+                const tags = tagsAttr ? tagsAttr.split(',').map(tag => tag.trim()) : [];
                 
                 if (filter === 'all') {
                     item.classList.remove('hidden');
-                } else if (tags && tags.includes(filter)) {
-                    item.classList.remove('hidden');
                 } else {
-                    item.classList.add('hidden');
+                    if (tags.some(tag => tag === filter)) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
                 }
             });
         });

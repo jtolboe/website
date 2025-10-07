@@ -7,7 +7,7 @@ weight: 2
 thumbnail: "/assets/images/gen/projects/embryo_thumb.jpg"
 image: "/assets/images/gen/projects/project-1-2.webp"
 categories: 
-tags: ["Nebula", "Mosaic"]
+tags: ["Nebula"]
 client: "NGC 1333"
 client_label: "Target"
 role: "LRGB"

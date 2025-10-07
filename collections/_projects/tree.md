@@ -6,9 +6,14 @@ date: 2024-11-03T10:20:00Z
 weight: 1
 thumbnail: "/assets/images/gen/projects/tree_thumb.jpg"
 image: 
-categories: ["Deep Sky"]
-client: "California Nebula - NGC 1499"
-role: "LRGB - 30 hours"
+categories: 
+tags: ["Nebula"]
+client: "NGC 2264"
+client_label: "Target"
+role: "LRGB"
+role_label: "Filters"
+time: "37 hours"
+time_label: "Total Integration"
 gallery:
   - image: "/assets/images/gen/projects/tree_page.jpg"
     caption: "Placeholder Caption"

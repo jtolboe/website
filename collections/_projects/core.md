@@ -6,9 +6,14 @@ date: 2024-11-03T10:20:00Z
 weight: 1
 thumbnail: "/assets/images/gen/projects/core_thumb.jpg"
 image: 
-categories: ["Deep Sky"]
-client: "California Nebula - NGC 1499"
-role: "LRGB - 30 hours"
+categories: 
+tags: ["Mosaic"]
+client: "Milkyway"
+client_label: "Target"
+role: "None"
+role_label: "Filters"
+time: "2 hours"
+time_label: "Total Integration"
 gallery:
   - image: "/assets/images/gen/projects/core_page.jpg"
     caption: "Placeholder Caption"
