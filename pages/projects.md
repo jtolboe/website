@@ -1,11 +1,11 @@
 ---
 layout: projects
-title: Astrophotography by Justin Tolboe
+title: ""
 permalink: "/projects/"
 
 projects:
   heading: "Gallery" # "Projects"
-  sub_heading: "Subheading" # "A collection of our recent work"
+  sub_heading: "" # "A collection of our recent work"
   limit: 96
   sort: date # date | weight
   view_more_button_text: "" # "More Projects"

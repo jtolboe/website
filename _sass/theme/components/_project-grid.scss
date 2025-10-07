@@ -17,6 +17,13 @@
     }
   }
 
+  // Handle hidden items in grid
+  .project-item {
+    &.hidden {
+      display: none;
+    }
+  }
+
   .card-project {
     margin: 0;
     height: 0;

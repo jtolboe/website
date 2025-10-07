@@ -5,9 +5,36 @@
 
 {% if heading or sub_heading %}
 <div class="col-12">
-  <div class="grid-header grid-header-align-{{ align }}">
-    {% if heading and heading != "" %}<h2>{{ heading }}</h2>{% endif %}
-    {% if sub_heading and sub_heading != "" %}<p class="large">{{ sub_heading }}</p>{% endif %}
+  <div class="grid-header">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="grid-header-title">
+        {% if heading and heading != "" %}<h2 class="mb-0">{{ heading }}</h2>{% endif %}
+        {% if sub_heading and sub_heading != "" %}<p class="large">{{ sub_heading }}</p>{% endif %}
+      </div>
+      {% if include.show_filters %}
+      <div class="project-filters">
+        <button class="btn btn-filter active" data-filter="all">All</button>
+        {% assign project_tags = "" | split: "" %}
+        {% for project in site.projects %}
+          {% if project.tags %}
+            {% assign valid_tags = "" | split: "" %}
+            {% for tag in project.tags %}
+              {% if tag != "" and tag != nil %}
+                {% assign valid_tags = valid_tags | push: tag %}
+              {% endif %}
+            {% endfor %}
+            {% assign project_tags = project_tags | concat: valid_tags | uniq %}
+          {% endif %}
+        {% endfor %}
+        {% assign sorted_tags = project_tags | sort %}
+        {% for tag in sorted_tags %}
+          {% if tag != "" and tag != nil %}
+            <button class="btn btn-filter" data-filter="{{ tag | slugify }}">{{ tag }}</button>
+          {% endif %}
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
   </div>
 </div>
 {% endif %}

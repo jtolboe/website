@@ -7,12 +7,13 @@ weight: 1
 thumbnail: "/assets/images/gen/projects/heart_soul_thumb.webp"
 image: "/assets/images/gen/projects/project-1-2.webp"
 categories: ["Development"]
+tags: ["Nebula", "Mosaic"]
 client: "IC 1805 | IC 1848"
 client_label: "Target"
 role: "LRGB"
 role_label: "Filters"
 time: "100 hours"
-time_label: "Integration"
+time_label: "Total Integration"
 gallery:
   - image: "/assets/images/gen/projects/heart_soul_page.webp"
     caption: ""

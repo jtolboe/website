@@ -17,6 +17,7 @@ body_classes: page-projects
 </div>
 
 
+
 {% assign cards = site.projects | sort: 'date' | reverse %}
 {% assign limit = page.projects.limit | default: 999 %}
 {% assign sort_by = page.projects.sort | default: 'date' %}
@@ -27,6 +28,9 @@ body_classes: page-projects
 {% endif %}
 
 {% assign cards = site.projects %}
+
+
+
 {% if cards.size > 0 %}
 <div class="section pt-0">
   <div class="container">
@@ -34,21 +38,25 @@ body_classes: page-projects
 
       {% include framework/grid-header.html 
         heading=page.projects.heading 
-        sub_heading=page.projects.sub_heading 
+        sub_heading=page.projects.sub_heading
+        show_filters=true
       %}
      
       <div class="project-grid" data-columns="{{ page.projects.columns | default: 3 }}">
         {% for card in cards limit: limit %}
-          {% include framework/card-project.html
-          title=card.title
-          description=card.description
-          thumbnail=card.thumbnail
-          categories=card.categories
-          date=card.date
-          url=card.url
-          client=card.client
-        %}
-      {% endfor %}
+          <div class="project-item" data-tags="{% if card.tags %}{% for tag in card.tags %}{% if tag != "" and tag != nil %}{{ tag | downcase | slugify }} {% endif %}{% endfor %}{% endif %}">
+            {% include framework/card-project.html
+            title=card.title
+            description=card.description
+            thumbnail=card.thumbnail
+            categories=card.categories
+            date=card.date
+            url=card.url
+            client=card.client
+            tags=card.tags
+            %}
+          </div>
+        {% endfor %}
       </div>
 
       {% include framework/grid-footer.html 

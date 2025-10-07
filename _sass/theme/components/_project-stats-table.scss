@@ -17,11 +17,6 @@
     th, td {
       padding: 0.5rem;  // Reduced padding
       border-color: rgba(255, 255, 255, 0.1);
-      vertical-align: middle;
-      line-height: 1.2;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
     }
     
     th {
@@ -35,21 +30,12 @@
     th:nth-child(3) { width: 35%; }  // Time column
     
     td {
-      font-size: 0.9rem; // Ensure consistent font size
-      
       &:first-child {
         font-weight: 500;
       }
       
       &:not(:first-child) {
         text-align: right;
-      }
-
-      // Special handling for longer text
-      &[colspan] {
-        text-align: left;
-        padding-left: 0.5rem;
-        white-space: normal;
       }
     }
   }
