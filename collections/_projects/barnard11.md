@@ -13,7 +13,7 @@ client_label: "Target"
 role: "Lum, Red, Green, Blue, Ha, Oiii"
 role_label: "Filters"
 time: "70 hours"
-time_label: "Total Integration"
+time_label: "Integration"
 gallery:
   - image: "/assets/images/gen/projects/barnard11_page.jpg"
     caption: "Placeholder Caption"

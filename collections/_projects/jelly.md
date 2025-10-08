@@ -10,10 +10,10 @@ categories:
 tags: ["Nebula"]
 client: "IC 443"
 client_label: "Target"
-role: "LRGB"
+role: "Lum, Red, Green, Blue"
 role_label: "Filters"
-time: "37 hours"
-time_label: "Total Integration"
+time: "15 hours"
+time_label: "Integration"
 gallery:
   - image: "/assets/images/gen/projects/jelly_page.jpg"
     caption: "Placeholder Caption"

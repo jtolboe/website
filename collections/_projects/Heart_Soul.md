@@ -13,7 +13,7 @@ client_label: "Target"
 role: "LRGB"
 role_label: "Filters"
 time: "100 hours"
-time_label: "Total Integration"
+time_label: "Integration"
 gallery:
   - image: "/assets/images/gen/projects/heart_soul_page.webp"
     caption: ""

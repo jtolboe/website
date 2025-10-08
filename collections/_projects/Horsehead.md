@@ -13,7 +13,7 @@ client_label: "Target"
 role: "LRGB"
 role_label: "Filters"
 time: "37 hours"
-time_label: "Total Integration"
+time_label: "Integration"
 gallery:
   - image: "/assets/images/gen/projects/horsehead_page.jpg"
     caption: "<strong>Above:</strong> North easterly aspect showing curved design"

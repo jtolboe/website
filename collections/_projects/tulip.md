@@ -13,7 +13,7 @@ client_label: "Target"
 role: "SHO"
 role_label: "Filters"
 time: "37 hours"
-time_label: "Total Integration"
+time_label: "Integration"
 gallery:
   - image: "/assets/images/gen/projects/tulip_page.jpg"
     caption: "Placeholder Caption"

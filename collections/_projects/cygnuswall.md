@@ -13,7 +13,7 @@ client_label: "Target"
 role: "Sii, Ha, Oiii"
 role_label: "Filters"
 time: "37 hours"
-time_label: "Total Integration"
+time_label: "Integration"
 gallery:
   - image: "/assets/images/gen/projects/cygwall_page.jpg"
     caption: "Placeholder Caption"
