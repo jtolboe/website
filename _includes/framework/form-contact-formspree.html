@@ -1,51 +1,68 @@
 <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="{{ site.contact_form.formspree_endpoint }}" method="post">
   <fieldset id="fs-frm-inputs">
-    <label for="full-name">Full Name</label>
-    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+    <label for="full-name">Name</label>
+    <input type="text" name="name" id="full-name" required style="background: transparent !important; color: #fff !important;">
     <label for="email-address">Email Address</label>
-    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+    <input type="email" name="_replyto" id="email-address" required style="background: transparent !important; color: #fff !important;">
     <label for="message">Message</label>
-    <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+    <textarea rows="5" name="message" id="message" required style="background: transparent !important; color: #fff !important;"></textarea>
     <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
   </fieldset>
-  <input type="submit" value="Submit">
+  <input type="submit" value="Submit" style="background: #fff !important; color: #000 !important; padding: 10px 20px; border-radius: 4px; cursor: pointer;">
 </form><style>/* reset */
 
-#fs-frm input,
+#fs-frm fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+#fs-frm input:not([type="submit"]):not([type="hidden"]),
 #fs-frm select,
 #fs-frm textarea,
-#fs-frm fieldset,
 #fs-frm optgroup,
 #fs-frm label,
 #fs-frm #card-element:disabled {
   font-family: inherit;
   font-size: 100%;
-  color: inherit;
-  border: none;
-  border-radius: 0;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
   display: block;
   width: 100%;
-  padding: 0;
+  padding: 10px;
   margin: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
+  background: transparent !important;
 }
+
 #fs-frm label,
-#fs-frm legend,
-#fs-frm ::placeholder {
+#fs-frm legend {
   margin-bottom: .5rem;
   padding-top: .2rem;
   display: flex;
   align-items: baseline;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#fs-frm input[type="submit"] {
+  background: #fff !important;
+  color: #000 !important;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  margin-top: 1rem;
 }
 
 /* border, padding, margin, width */
-#fs-frm input,
+#fs-frm input:not([type="submit"]):not([type="hidden"]),
 #fs-frm select,
 #fs-frm textarea,
 #fs-frm #card-element {
-  border: 1px solid rgba(0,0,0,0.2);
-  background-color: rgba(255,255,255,0.9);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent !important;
   padding: .75em 1rem;
   margin-bottom: 1.5rem;
 }

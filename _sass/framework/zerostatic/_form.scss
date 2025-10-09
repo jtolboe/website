@@ -8,13 +8,13 @@ form {
       margin-bottom: 8px;
       font-weight: 600;
       font-size: 16px;
-      color: var(--color-base-text);
+      color: rgba(255, 255, 255, 0.9);
     }
     input,
     textarea {
       font-size: 16px;
       font-family: var(--font-family-base);
-      color: var(--color-base-text);
+      color: rgba(0, 0, 0, 0.9);
       -webkit-appearance: none;
       appearance: none;
       border: none;
@@ -22,13 +22,26 @@ form {
       width: 100%;
       padding: 10px;
       border-radius: var(--card-border-radius);
-      border: 1px solid var(--color-base-bg-2);
-      background-color: var(--color-base-bg-2);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background-color: rgba(255, 255, 255, 0.9);
+
+      &::placeholder {
+        color: rgba(0, 0, 0, 0.4);
+      }
     }
   }
-  input[type="submit"] {
-    -webkit-appearance: none;
-    border: none;
+  .button {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: rgba(0, 0, 0, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
     cursor: pointer;
+    font-weight: 500;
+    
+    &:hover {
+      background-color: #ffffff;
+      transform: none;
+      box-shadow: none;
+    }
   }
 }

@@ -4,6 +4,40 @@
     --font-family-heading: 'Roboto Slab', serif !important;
 }
 
+// Contact form custom styles
+.page-contact {
+    .contact {
+        form {
+            .form-group {
+                input:not([type="submit"]),
+                textarea {
+                    background-color: #ffffff !important;
+                    color: #000000 !important;
+                    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+
+                    &::placeholder {
+                        color: transparent !important;
+                    }
+                }
+
+                label {
+                    color: rgba(255, 255, 255, 0.9) !important;
+                }
+            }
+
+            input[type="submit"].button {
+                background-color: #ffffff !important;
+                color: #000000 !important;
+                border: 1px solid rgba(255, 255, 255, 0.2) !important;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+}
+
 body {
     font-family: var(--font-family-base) !important;
 }
@@ -40,6 +74,31 @@ h1, h2, h3, h4, h5, h6 {
         justify-content: center;
         h1 {
             margin: 0 auto;
+        }
+    }
+}
+
+// Contact form styles
+.page-contact {
+    .contact {
+        form {
+            .form-group {
+                input,
+                textarea {
+                    background-color: rgba(255, 255, 255, 0.1) !important;
+                    color: #ffffff !important;
+                    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+                    
+                    &:focus {
+                        border-color: rgba(255, 255, 255, 0.5) !important;
+                        background-color: rgba(255, 255, 255, 0.15) !important;
+                    }
+                }
+                
+                label {
+                    color: rgba(255, 255, 255, 0.9) !important;
+                }
+            }
         }
     }
 }
