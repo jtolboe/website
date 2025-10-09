@@ -12,6 +12,15 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-heading) !important;
 }
 
+// Brighten text color for project layout content
+.page-project {
+    .content {
+        p {
+            color: rgba(255, 255, 255, 0.75) !important; // Brighter text while maintaining some softness
+        }
+    }
+}
+
 .heading .heading-heading h1 {
     font-size: 36px;
     line-height: 1;
