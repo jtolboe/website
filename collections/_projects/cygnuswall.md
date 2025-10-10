@@ -12,11 +12,11 @@ client: "NGC 7000"
 client_label: "Target"
 role: "Sii, Ha, Oiii"
 role_label: "Filters"
-time: "37 hours"
+time: "20 hours"
 time_label: "Integration"
 gallery:
   - image: "/assets/images/gen/projects/cygwall_page.jpg"
-    caption: "Placeholder Caption"
+    caption: ""
   
 gallery_limit: 2
 ---

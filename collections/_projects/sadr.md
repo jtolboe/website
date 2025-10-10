@@ -10,13 +10,13 @@ categories:
 tags: ["Nebula"]
 client: "IC 1318"
 client_label: "Target"
-role: "LRGB"
+role: "Lum, Red, Green, Blue"
 role_label: "Filters"
-time: "37 hours"
+time: "12 hours"
 time_label: "Integration"
 gallery:
   - image: "/assets/images/gen/projects/sadr_page.jpg"
-    caption: "Placeholder Caption"
+    caption: ""
   
 gallery_limit: 2
 ---

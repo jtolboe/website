@@ -10,13 +10,13 @@ categories:
 tags: ["Nebula"]
 client: "NGC 1499"
 client_label: "Target"
-role: "LRGB"
+role: "Lum, Red, Green, Blue"
 role_label: "Filters"
-time: "37 hours"
+time: "43 hours"
 time_label: "Integration"
 gallery:
   - image: "/assets/images/gen/projects/cali_page.jpg"
-    caption: "Placeholder Caption"
+    caption: ""
   
 gallery_limit: 2
 ---

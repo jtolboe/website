@@ -10,7 +10,7 @@ categories:
 tags: ["Nebula"]
 client: "NGC 1333"
 client_label: "Target"
-role: "LRGB"
+role: "Lum, Red, Green, Blue"
 role_label: "Filters"
 time: "37 hours"
 time_label: "Integration"

@@ -7,12 +7,12 @@ weight: 1
 thumbnail: "/assets/images/gen/projects/wolfs_thumb.jpg"
 image: "/assets/images/gen/projects/project-1-2.webp"
 categories: 
-tags: ["Nebula", "Mosaic"]
+tags: ["Nebula"]
 client: "vDb 155 | LDN 1235"
 client_label: "Target"
-role: "LRGB"
+role: "Lum, Red, Green, Blue"
 role_label: "Filters"
-time: "37 hours"
+time: "41 hours"
 time_label: "Integration"
 gallery:
   - image: "/assets/images/gen/projects/wolfs_page.jpg"

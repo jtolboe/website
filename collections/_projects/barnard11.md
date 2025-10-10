@@ -8,7 +8,7 @@ thumbnail: "/assets/images/gen/projects/barnard11_thumb.jpg"
 image: 
 categories: 
 tags: ["Nebula"]
-client: "NGC 1333"
+client: "Barnard 11"
 client_label: "Target"
 role: "Lum, Red, Green, Blue, Ha, Oiii"
 role_label: "Filters"
@@ -16,7 +16,7 @@ time: "70 hours"
 time_label: "Integration"
 gallery:
   - image: "/assets/images/gen/projects/barnard11_page.jpg"
-    caption: "Placeholder Caption"
+    caption: ""
   
 gallery_limit: 2
 ---

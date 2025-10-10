@@ -10,13 +10,13 @@ categories:
 tags: ["Nebula"]
 client: "vDb 123 | Sh2-64"
 client_label: "Target"
-role: "LRGB"
+role: "Lum, Red, Green, Blue"
 role_label: "Filters"
-time: "37 hours"
+time: "32 hours"
 time_label: "Integration"
 gallery:
   - image: "/assets/images/gen/projects/serpens_page.jpg"
-    caption: "Placeholder Caption"
+    caption: ""
   
 gallery_limit: 2
 ---

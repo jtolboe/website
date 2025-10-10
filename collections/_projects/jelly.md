@@ -12,11 +12,11 @@ client: "IC 443"
 client_label: "Target"
 role: "Lum, Red, Green, Blue"
 role_label: "Filters"
-time: "15 hours"
+time: "7 hours"
 time_label: "Integration"
 gallery:
   - image: "/assets/images/gen/projects/jelly_page.jpg"
-    caption: "Placeholder Caption"
+    caption: ""
   
 gallery_limit: 2
 ---

@@ -10,13 +10,13 @@ categories:
 tags: ["Nebula", "False Color"]
 client: "IC 2177"
 client_label: "Target"
-role: "SHO"
+role: "Sii, Ha, Oiii"
 role_label: "Filters"
-time: "37 hours"
+time: "20 hours"
 time_label: "Integration"
 gallery:
   - image: "/assets/images/gen/projects/seagull_page.jpg"
-    caption: "Placeholder Caption"
+    caption: ""
   
 gallery_limit: 2
 ---

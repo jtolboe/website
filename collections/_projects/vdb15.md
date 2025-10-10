@@ -10,13 +10,13 @@ categories:
 tags: ["Nebula"]
 client: "vDb 14/15"
 client_label: "Target"
-role: "LRGB"
+role: "Ha, Lum, Red, Green, Blue"
 role_label: "Filters"
-time: "37 hours"
+time: "76 hours"
 time_label: "Integration"
 gallery:
   - image: "/assets/images/gen/projects/vdb15_page.jpg"
-    caption: "Placeholder Caption"
+    caption: ""
   
 gallery_limit: 2
 ---

@@ -8,7 +8,7 @@ thumbnail: "/assets/images/gen/projects/core_thumb.jpg"
 image: 
 categories: 
 tags: ["Mosaic"]
-client: "Milkyway"
+client: "Milkyway Core"
 client_label: "Target"
 role: "None"
 role_label: "Filters"
@@ -16,7 +16,7 @@ time: "2 hours"
 time_label: "Integration"
 gallery:
   - image: "/assets/images/gen/projects/core_page.jpg"
-    caption: "Placeholder Caption"
+    caption: ""
   
 gallery_limit: 2
 ---
