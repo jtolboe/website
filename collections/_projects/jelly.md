@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Jellyfish"
-description: "Placeholder text"
+description: "Test"
 date: 2024-02-03T10:20:00Z
 weight: 1
 thumbnail: "/assets/images/gen/projects/jelly_thumb.jpg"
@@ -21,4 +21,5 @@ gallery:
 gallery_limit: 2
 ---
 
-Placeholder text
+Test 2
+llll
