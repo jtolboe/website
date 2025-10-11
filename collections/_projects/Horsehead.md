@@ -2,7 +2,7 @@
 layout: project
 title: "Horsehead Nebula"
 description: "Placeholder text"
-date: 2018-11-03T10:20:00Z
+date: 2022-12-03T10:20:00Z
 weight: 1
 thumbnail: "/assets/images/gen/projects/horsehead_thumb.jpg"
 image: "/assets/images/gen/projects/project-1-2.webp"

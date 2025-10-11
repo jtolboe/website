@@ -2,7 +2,7 @@
 layout: project
 title: "Barnard 11"
 description: "Placeholder text"
-date: 2024-11-03T10:20:00Z
+date: 2023-11-03T10:20:00Z
 weight: 1
 thumbnail: "/assets/images/gen/projects/barnard11_thumb.jpg"
 image: 

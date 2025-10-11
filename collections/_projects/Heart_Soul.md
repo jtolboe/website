@@ -6,7 +6,7 @@ date: 2022-10-01
 weight: 1
 thumbnail: "/assets/images/gen/projects/heart_soul_thumb.webp"
 image: "/assets/images/gen/projects/project-1-2.webp"
-categories: 
+
 tags: ["Nebula"]
 client: "IC 1805 | IC 1848"
 client_label: "Target"

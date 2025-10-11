@@ -2,7 +2,7 @@
 layout: project
 title: "Jellyfish"
 description: "Placeholder text"
-date: 2024-11-03T10:20:00Z
+date: 2024-02-03T10:20:00Z
 weight: 1
 thumbnail: "/assets/images/gen/projects/jelly_thumb.jpg"
 image: "/assets/images/gen/projects/project-1-2.webp"
