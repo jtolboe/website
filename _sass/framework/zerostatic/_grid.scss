@@ -33,8 +33,8 @@
   }
   h2 {
     text-transform: uppercase;
-    font-size: 32px;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: 400;
     color: var(--color-base-text);
     font-family: var(--font-family-base);
   }
@@ -42,5 +42,25 @@
     font-size: 18px;
     color: var(--color-base-text-2);
     margin-top: 6px;
+  }
+  .grid-header-view-more {
+    .grid-view-more-button {
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--color-primary-bg);
+      font-family: var(--font-family-base);
+      text-decoration: none;
+      html[data-bs-theme="dark"] & {
+        color: var(--color-base-text-dark);
+      }
+      &:hover {
+        text-decoration: none;
+        opacity: 0.8;
+      }
+      i {
+        margin-left: 8px;
+      }
+    }
   }
 }

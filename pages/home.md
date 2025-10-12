@@ -8,7 +8,7 @@ meta_title: "Astrophotography - Justin Tolboe"
 subscribe: false
 
 projects:
-  heading: "Text" # "Projects"
+  heading: "Latest Projects" # "Projects"
   sub_heading: "" # "A collection of our recent work"
   limit: 4
   sort: date # date | weight
