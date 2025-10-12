@@ -42,12 +42,14 @@ body_classes: page-home
       %}
      
       {% for card in cards limit: limit %}
+      {% comment %}Convert thumbnail path to home page image for home page display{% endcomment %}
+      {% assign home_image = card.thumbnail | replace: "_thumb.jpg", "_home.jpg" %}
       <div
         class="col-12 col-md-6 {{ columns }} mb-gutter mt-gutter {% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mt-md-0">
         {% include framework/card-project.html
           title=card.title
           description=card.description
-          thumbnail=card.thumbnail
+          thumbnail=home_image
           categories=card.categories
           date=card.date
           url=card.url
