@@ -1,8 +1,8 @@
 ---
 layout: project
 title: "The Seagull"
-description: "Placeholder text"
-date: 2023-02-03T10:20:00Z
+description: "The Seagull nebula in SHO"
+date: 2023-03-03T10:20:00Z
 weight: 1
 thumbnail: "/assets/images/gen/projects/seagull_thumb.jpg"
 image: "/assets/images/gen/projects/project-1-2.webp"
@@ -21,4 +21,3 @@ gallery:
 gallery_limit: 2
 ---
 
-Placeholder text

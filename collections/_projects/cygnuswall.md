@@ -1,8 +1,8 @@
 ---
 layout: project
 title: "Cygnus Wall"
-description: "Placeholder text"
-date: 2022-09-03T10:20:00Z
+description: "The Cygnus Wall of the North America nebula in SHO"
+date: 2022-09-10T10:20:00Z
 weight: 1
 thumbnail: "/assets/images/gen/projects/cygwall_thumb.jpg"
 image: 
@@ -21,4 +21,3 @@ gallery:
 gallery_limit: 2
 ---
 
-Placeholder text

@@ -1,8 +1,8 @@
 ---
 layout: project
 title: "Embryo Nebula"
-description: "Placeholder text"
-date: 2022-11-01T10:20:00Z
+description: "The Embryo Nebula"
+date: 2022-11-15T10:20:00Z
 weight: 2
 thumbnail: "/assets/images/gen/projects/embryo_thumb.jpg"
 image: "/assets/images/gen/projects/project-1-2.webp"
@@ -21,4 +21,3 @@ gallery:
 gallery_limit: 2
 ---
 
-Placeholder text

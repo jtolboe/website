@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Milkyway Widefield"
-description: "Placeholder text"
+description: "The core of our galaxy"
 date: 2022-09-22T10:20:00Z
 weight: 1
 thumbnail: "/assets/images/gen/projects/core_thumb.jpg"
@@ -21,4 +21,3 @@ gallery:
 gallery_limit: 2
 ---
 
-Placeholder text

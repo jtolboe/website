@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "The Heart and Soul"
-description: "Placeholder text"
+description: "A three panel mosaic of the Heart and Soul nebulae in LRGB"
 date: 2022-10-01
 weight: 1
 thumbnail: "/assets/images/gen/projects/heart_soul_thumb.webp"
@@ -21,4 +21,3 @@ gallery:
 gallery_limit: 2
 ---
 
-A three panel mosaic of the Heart and Soul nebulae.

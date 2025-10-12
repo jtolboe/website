@@ -1,8 +1,8 @@
 ---
 layout: project
 title: "The Cygnus Loop"
-description: "Placeholder text"
-date: 2022-09-03T10:20:00Z
+description: "The Veil nebulae in HOO"
+date: 2022-09-02T10:20:00Z
 weight: 1
 thumbnail: "/assets/images/gen/projects/veil_thumb.jpg"
 image: 
@@ -21,4 +21,4 @@ gallery:
 gallery_limit: 2
 ---
 
-Placeholder text
+ 

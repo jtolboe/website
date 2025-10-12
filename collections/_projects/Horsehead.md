@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Horsehead Nebula"
-description: "Placeholder text"
+description: "The iconic Horsehead nebula"
 date: 2022-12-03T10:20:00Z
 weight: 1
 thumbnail: "/assets/images/gen/projects/horsehead_thumb.jpg"
@@ -21,4 +21,3 @@ gallery:
 gallery_limit: 2
 ---
 
-Placeholder text

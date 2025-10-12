@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Christmas Tree Cluster"
-description: "Placeholder text"
+description: "Christmas Tree Cluster of Monoceros"
 date: 2023-01-03T10:20:00Z
 weight: 1
 thumbnail: "/assets/images/gen/projects/tree_thumb.jpg"
@@ -21,4 +21,3 @@ gallery:
 gallery_limit: 2
 ---
 
-Placeholder text

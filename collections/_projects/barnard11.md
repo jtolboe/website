@@ -1,8 +1,8 @@
 ---
 layout: project
 title: "Barnard 11"
-description: "Placeholder text"
-date: 2023-11-03T10:20:00Z
+description: "Barnard 11 & Thor's Lightning (SNR G150.3+4.5)"
+date: 2024-01-03T10:20:00Z
 weight: 1
 thumbnail: "/assets/images/gen/projects/barnard11_thumb.jpg"
 image: 
@@ -20,5 +20,3 @@ gallery:
   
 gallery_limit: 2
 ---
-
-Placeholder text

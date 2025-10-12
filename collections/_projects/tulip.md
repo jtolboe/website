@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "WR-134 | Tulip Nebula"
-description: "Placeholder text"
+description: "Wolf-Rayet 134 and the Tulip in SHO"
 date: 2023-07-03T10:20:00Z
 weight: 1
 thumbnail: "/assets/images/gen/projects/tulip_thumb.jpg"
@@ -21,4 +21,3 @@ gallery:
 gallery_limit: 2
 ---
 
-Placeholder text

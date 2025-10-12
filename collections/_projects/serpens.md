@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Serpens"
-description: "Placeholder text"
+description: "A three panel mosaic capturing a portion of the Serpens constellation"
 date: 2023-06-01T10:20:00Z
 weight: 1
 thumbnail: "/assets/images/gen/projects/serpens_thumb.jpg"
@@ -20,5 +20,3 @@ gallery:
   
 gallery_limit: 2
 ---
-
-Placeholder text
