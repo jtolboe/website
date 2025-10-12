@@ -16,7 +16,7 @@ time: "41 hours"
 time_label: "Integration"
 gallery:
   - image: "/assets/images/gen/projects/wolfs_page.jpg"
-    caption: "Placeholder Caption"
+    caption: ""
   
 gallery_limit: 2
 ---
