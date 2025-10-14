@@ -1,3 +1,42 @@
+
+:root {
+    color-scheme: dark !important;
+    
+    // Force dark mode colors always
+    --color-primary-bg: #232323 !important;
+    --color-primary-bg-2: #232323 !important;
+    --color-primary-bg-3: #232323 !important;
+    --color-primary-text: #d9d9d9 !important;
+    --color-base-bg: #232323 !important;
+    --color-base-bg-2: #150c32 !important;
+    --color-base-bg-3: #232323 !important;
+    --color-base-text: #d9d9d9 !important;
+    --color-base-text-2: #929eaf !important;
+    --color-logo-text: #d9d9d9 !important;
+    --color-header-text: #d9d9d9 !important;
+    --color-footer-bg: #101631 !important;
+    --color-footer-text: #fdfcf9 !important;
+}
+
+// Override any light mode media queries
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-primary-bg: #232323 !important;
+        --color-primary-bg-2: #232323 !important;
+        --color-primary-bg-3: #232323 !important;
+        --color-primary-text: #d9d9d9 !important;
+        --color-base-bg: #232323 !important;
+        --color-base-bg-2: #150c32 !important;
+        --color-base-bg-3: #232323 !important;
+        --color-base-text: #d9d9d9 !important;
+        --color-base-text-2: #929eaf !important;
+        --color-logo-text: #d9d9d9 !important;
+        --color-header-text: #d9d9d9 !important;
+        --color-footer-bg: #101631 !important;
+        --color-footer-text: #fdfcf9 !important;
+    }
+}
+
 // Apply Roboto Slab as the main font
 :root {
     --font-family-base: 'Roboto Slab', serif !important;

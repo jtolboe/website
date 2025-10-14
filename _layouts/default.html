@@ -14,7 +14,8 @@
 
     {% if site.darkmode.enable_dark_mode != false %}
       <script>
-          localStorage.getItem('darkMode') === 'true' && document.documentElement.setAttribute('data-bs-theme', 'dark');
+          // Force dark mode always - ignore localStorage and system preferences
+          document.documentElement.setAttribute('data-bs-theme', 'dark');
       </script>
     {% endif %}
 
