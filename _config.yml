@@ -11,6 +11,7 @@ highlighter: rouge
 plugins:
   - jekyll-environment-variables
   - jekyll-paginate
+  - jekyll-sitemap
 
 paginate: 6
 paginate_path: "/blog/page/:num"
@@ -46,10 +47,6 @@ defaults:
       path: "categories"
     values:
       permalink: /category/:basename/
-  - scope:
-      path: "pages"
-
-defaults:
   - scope:
       path: "pages"
     values:
@@ -135,9 +132,9 @@ header:
 
 open_graph:
   meta_opengraph_type: "website"
-  meta_twitter_card: "summary"
-  meta_twitter_site: "@zerostaticio"
-  meta_twitter_creator: "@zerostaticio"
+  meta_twitter_card: ""
+  meta_twitter_site: ""
+  meta_twitter_creator: ""
 
 darkmode:
   enable_dark_mode: true
