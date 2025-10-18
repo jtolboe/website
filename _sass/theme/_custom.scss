@@ -353,3 +353,117 @@ h1, h2, h3, h4, h5, h6 {
         }
     }
 }
+
+// Stats table styling
+.project-stats-table {
+    margin-top: 2rem; // Add space from image to better align with right column
+    
+    .table-title {
+        color: var(--color-base-text) !important;
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+        text-align: center !important;
+        width: 100%;
+        display: block;
+    }
+
+    .table {
+        background-color: #1a1a1a !important; // Darker than surrounding #232323
+        border: 1px solid #333 !important;
+        border-radius: 8px !important;
+        overflow: hidden;
+        
+        th {
+            background-color: #070313 !important; // Using your base_bg_2_dark color
+            color: var(--color-base-text) !important;
+            border-color: #333 !important;
+            font-weight: 600;
+            padding: 0.75rem !important;
+        }
+        
+        td {
+            background-color: #1a1a1a !important;
+            color: var(--color-base-text) !important;
+            border-color: #333 !important;
+            padding: 0.75rem !important;
+            
+            // Center exposure counts (second column)
+            &:nth-child(2) {
+                text-align: center;
+            }
+        }
+        
+        // Expand table width and column sizing
+        table-layout: fixed;
+        width: 100%;
+        min-width: 450px;
+        
+        // Column widths for better spacing - prevent Integration Time wrapping
+        th:nth-child(1), td:nth-child(1) { width: 28%; } // Filter
+        th:nth-child(2), td:nth-child(2) { width: 22%; } // Exposures
+        th:nth-child(3), td:nth-child(3) { width: 50%; } // Integration Time (increased)
+        
+        tr:hover {
+            td {
+                background-color: #251654 !important; // Using your base_bg_3_dark for hover
+            }
+        }
+        
+        // Dates row styling
+        .dates-row {
+            th.date-cell {
+                background-color: #0d042b !important; // Darker purple for dates
+                color: #d9d9d9 !important;
+                font-weight: 500;
+                font-style: italic;
+                text-align: center;
+                border-bottom: 2px solid #333 !important;
+            }
+        }
+    }
+}
+
+// Detail sections styling
+.detail-section {
+    margin-top: 3rem !important;
+    
+    .detail-section-title {
+        color: var(--color-base-text) !important;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        font-size: 1.3rem;
+        text-align: left;
+    }
+    
+    .detail-image {
+        img {
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+    }
+    
+    .detail-content {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        
+        p {
+            color: var(--color-base-text-2) !important;
+            line-height: 1.6;
+            margin-bottom: 0;
+            font-size: 1rem;
+        }
+    }
+    
+    // Ensure proper alignment on mobile
+    @media (max-width: 767px) {
+        .detail-image {
+            margin-bottom: 1.5rem;
+        }
+        
+        .detail-content {
+            align-items: flex-start;
+        }
+    }
+}

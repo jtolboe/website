@@ -44,11 +44,6 @@ body_classes: page-project
 
     <div class="row">
       <div class="col-12 col-md-6 mb-4">
-        {% if page.date %}
-          <div class="project-date">
-            <strong>Date </strong><span>{{ page.date | date_to_long_string }}</span>
-          </div>
-        {% endif %}
         {% if page.client %}
           <div class="project-client">
             <strong>{{ page.client_label | default: "Client" }} </strong><span>{{ page.client }}</span>
@@ -70,8 +65,21 @@ body_classes: page-project
               <div class="table-title">{{ page.stats_table.title }}</div>
             {% endif %}
             <table class="table table-sm">
-              {% if page.stats_table.headers %}
+              {% if page.stats_table.dates %}
               <thead>
+                <tr class="dates-row">
+                  {% if page.stats_table.dates.size == 1 %}
+                    <th class="date-cell" colspan="{{ page.stats_table.headers.size }}">{{ page.stats_table.dates[0] }}</th>
+                  {% else %}
+                    {% for date in page.stats_table.dates %}
+                      <th class="date-cell">{{ date }}</th>
+                    {% endfor %}
+                  {% endif %}
+                </tr>
+              </thead>
+              {% endif %}
+              {% if page.stats_table.headers %}
+              <thead{% unless page.stats_table.dates %} class="main-header"{% endunless %}>
                 <tr>
                   {% for header in page.stats_table.headers %}
                     <th>{{ header }}</th>
@@ -93,9 +101,71 @@ body_classes: page-project
         {% endif %}
       </div>
       <div class="col-12 col-md-6 mb-4">
-        <div class="content">{{ content }}</div>
+        <div class="content" style="margin-top: 2rem;">{{ content }}</div>
       </div>
     </div>
+    
+    {% if page.detail_sections %}
+      {% for section in page.detail_sections %}
+        <div class="detail-section mt-5">
+          {% if section.title %}
+            <div class="row">
+              <div class="col-12">
+                <h3 class="detail-section-title">{{ section.title }}</h3>
+              </div>
+            </div>
+          {% endif %}
+          
+          <div class="row">
+            {% if section.layout == "right" %}
+              <!-- Description on left, image on right -->
+              {% assign text_cols = 4 %}
+              {% assign image_cols = 8 %}
+              {% if section.width == "50%" %}
+                {% assign text_cols = 6 %}
+                {% assign image_cols = 6 %}
+              {% elsif section.width == "75%" %}
+                {% assign text_cols = 3 %}
+                {% assign image_cols = 9 %}
+              {% endif %}
+              
+              <div class="col-12 col-md-{{ text_cols }} mb-4">
+                <div class="detail-content">
+                  <p>{{ section.description }}</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-{{ image_cols }} mb-4">
+                <div class="detail-image">
+                  <img src="{{ section.image | relative_url }}" class="img-fluid" alt="{{ section.title }}">
+                </div>
+              </div>
+            {% else %}
+              <!-- Image on left, description on right (default) -->
+              {% assign text_cols = 8 %}
+              {% assign image_cols = 4 %}
+              {% if section.width == "50%" %}
+                {% assign text_cols = 6 %}
+                {% assign image_cols = 6 %}
+              {% elsif section.width == "75%" %}
+                {% assign text_cols = 3 %}
+                {% assign image_cols = 9 %}
+              {% endif %}
+              
+              <div class="col-12 col-md-{{ image_cols }} mb-4">
+                <div class="detail-image">
+                  <img src="{{ section.image | relative_url }}" class="img-fluid" alt="{{ section.title }}">
+                </div>
+              </div>
+              <div class="col-12 col-md-{{ text_cols }} mb-4">
+                <div class="detail-content">
+                  <p>{{ section.description }}</p>
+                </div>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    {% endif %}
   </div>
 </div>
 
