@@ -375,7 +375,7 @@ h1, h2, h3, h4, h5, h6 {
         overflow: hidden;
         
         th {
-            background-color: #070313 !important; // Using your base_bg_2_dark color
+            background-color: #1a1a1a !important; // Using your base_bg_2_dark color
             color: var(--color-base-text) !important;
             border-color: #333 !important;
             font-weight: 600;
@@ -402,18 +402,33 @@ h1, h2, h3, h4, h5, h6 {
         // Column widths for better spacing - prevent Integration Time wrapping
         th:nth-child(1), td:nth-child(1) { width: 28%; } // Filter
         th:nth-child(2), td:nth-child(2) { width: 22%; } // Exposures
-        th:nth-child(3), td:nth-child(3) { width: 50%; } // Integration Time (increased)
+        th:nth-child(3), td:nth-child(3) { width: 50%; } // Integration Time 
+        
+        // Mobile-specific adjustments
+        @media (max-width: 767px) {
+            min-width: 320px;
+            font-size: 0.9rem;
+            
+            th, td {
+                padding: 0.5rem !important;
+            }
+            
+            // Adjust column widths for mobile
+            th:nth-child(1), td:nth-child(1) { width: 30%; } // Filter
+            th:nth-child(2), td:nth-child(2) { width: 25%; } // Exposures  
+            th:nth-child(3), td:nth-child(3) { width: 45%; } // Integration Time
+        } 
         
         tr:hover {
             td {
-                background-color: #251654 !important; // Using your base_bg_3_dark for hover
+                background-color: #4e4f4f !important; // s
             }
         }
         
         // Dates row styling
         .dates-row {
             th.date-cell {
-                background-color: #0d042b !important; // Darker purple for dates
+                background-color: #2a2a2a !important; 
                 color: #d9d9d9 !important;
                 font-weight: 500;
                 font-style: italic;
@@ -429,7 +444,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 3rem !important;
     
     .detail-section-title {
-        color: var(--color-base-text) !important;
+        color: #d9d9d9 !important;
         font-weight: 600;
         margin-bottom: 1.5rem;
         font-size: 1.3rem;
@@ -449,10 +464,10 @@ h1, h2, h3, h4, h5, h6 {
         height: 100%;
         
         p {
-            color: var(--color-base-text-2) !important;
+            color: #d9d9d9 !important;
             line-height: 1.6;
             margin-bottom: 0;
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
     }
     

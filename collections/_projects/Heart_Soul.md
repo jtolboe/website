@@ -29,10 +29,15 @@ gallery_limit: 1
 # Additional detail sections with images and descriptions
 detail_sections:
   - image: "/assets/images/gen/projects/melotte.jpg"
-    title: "Notable Objects"
-    description: "A closer look at the central star-forming region within the Heart Nebula, showing the intricate details of the stellar nursery where new stars are born."
+    title: "Melotte 15"
+    description: "A closer look at the central star-forming region within the Heart Nebula, containing some 'young' bright stars, some of which are an estimates 50 times our Suns mass."
     layout: "left"  
-    width: "50%"     
+    width: "50%"  
+  - image: "/assets/images/gen/projects/fishhead.jpg"
+    title: "Fish Head Nebula"
+    description: "IC 1795, known as the Fish Head nebula, a smaller part of the larger Heart nebula structure."
+    layout: "left"  
+    width: "50%"   
 ---
 
-These emission nebulae lie in the constellation of Cassiopeia, roughly 7,500 light years from Earth. 
+The Heart and Soul nebulae lie in the constellation of Cassiopeia, about 7,500 light years from Earth. Together across this frame, they span roughly more than 600 light years in distance. At the bottom edge of the frame, right of center, are also the galaxies known as Maffei 1 and Maffei 2. 

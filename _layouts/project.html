@@ -111,7 +111,7 @@ body_classes: page-project
           {% if section.title %}
             <div class="row">
               <div class="col-12">
-                <h3 class="detail-section-title">{{ section.title }}</h3>
+                <h3 class="detail-section-title{% if section.layout == 'right' %} text-end{% elsif section.layout == 'left' %} text-start{% else %} text-center{% endif %}">{{ section.title }}</h3>
               </div>
             </div>
           {% endif %}
