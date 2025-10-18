@@ -1,0 +1,21 @@
+{
+  "name": "Justin Tolboe - Astrophotography",
+  "short_name": "Justin Tolboe",
+  "icons": [
+    {
+      "src": "/assets/images/favicon/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/favicon/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#0d042b",
+  "background_color": "#232323",
+  "display": "standalone"
+}
