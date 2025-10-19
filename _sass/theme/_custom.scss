@@ -362,7 +362,7 @@ h1, h2, h3, h4, h5, h6 {
         color: var(--color-base-text) !important;
         font-weight: 600;
         font-size: 1.1rem;
-        margin-bottom: 0.75rem;
+        margin-bottom: 0.25rem;
         text-align: center !important;
         width: 100%;
         display: block;
@@ -447,7 +447,7 @@ h1, h2, h3, h4, h5, h6 {
         color: #d9d9d9 !important;
         font-weight: 600;
         margin-bottom: 1.5rem;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         text-align: left;
     }
     
@@ -467,8 +467,24 @@ h1, h2, h3, h4, h5, h6 {
             color: #d9d9d9 !important;
             line-height: 1.6;
             margin-bottom: 0;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
+    }
+    
+    // Main project content styling - target the actual rendered content
+    .project-main-content {
+        font-size: 1.4rem !important;
+        color: #d9d9d9 !important;
+        line-height: 1.4 !important;
+    }
+    
+    // Target all possible elements that could contain the markdown content
+    .project-main-content p,
+    .project-main-content div,
+    .project-main-content span {
+        font-size: 1.4rem !important;
+        color: #d9d9d9 !important;
+        line-height: 1.4 !important;
     }
     
     // Ensure proper alignment on mobile

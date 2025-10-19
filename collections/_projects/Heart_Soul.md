@@ -40,4 +40,4 @@ detail_sections:
     width: "50%"   
 ---
 
-The Heart and Soul nebulae lie in the constellation of Cassiopeia, about 7,500 light years from Earth. Together across this frame, they span roughly more than 600 light years in distance. At the bottom edge of the frame, right of center, are also the galaxies known as Maffei 1 and Maffei 2. 
+The Heart and Soul nebulae lie in the constellation of Cassiopeia, about 7,500 light years from Earth. Together across this frame, they span roughly more than 600 light years in distance. At the bottom edge of the frame, right of center, are also the galaxies known as Maffei 1 and Maffei 2. Test

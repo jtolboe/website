@@ -1,18 +1,20 @@
 .project-stats-table {
-  max-width: 400px;  // Limit overall table width
+  width: fit-content;  // Table takes only needed width
   
   .table-title {
     font-weight: 600;
     font-size: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
     color: inherit;
+    text-align: center;
   }
 
   .table {
     background: rgba(54, 52, 52, 0.05);
     color: inherit;
     font-size: 0.9rem;
-    table-layout: fixed;  // This helps control column widths
+    table-layout: auto;  // Let table size to content
+    width: auto;  // Don't force full width
     
     th, td {
       padding: 0.5rem;  // Reduced padding

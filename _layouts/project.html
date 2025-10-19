@@ -59,49 +59,12 @@ body_classes: page-project
             <strong>{{ page.time_label | default: "Time" }} </strong><span>{{ page.time }}</span>
           </div>
         {% endif %}
-        {% if page.stats_table %}
-          <div class="project-stats-table mt-4">
-            {% if page.stats_table.title %}
-              <div class="table-title">{{ page.stats_table.title }}</div>
-            {% endif %}
-            <table class="table table-sm">
-              {% if page.stats_table.dates %}
-              <thead>
-                <tr class="dates-row">
-                  {% if page.stats_table.dates.size == 1 %}
-                    <th class="date-cell" colspan="{{ page.stats_table.headers.size }}">{{ page.stats_table.dates[0] }}</th>
-                  {% else %}
-                    {% for date in page.stats_table.dates %}
-                      <th class="date-cell">{{ date }}</th>
-                    {% endfor %}
-                  {% endif %}
-                </tr>
-              </thead>
-              {% endif %}
-              {% if page.stats_table.headers %}
-              <thead{% unless page.stats_table.dates %} class="main-header"{% endunless %}>
-                <tr>
-                  {% for header in page.stats_table.headers %}
-                    <th>{{ header }}</th>
-                  {% endfor %}
-                </tr>
-              </thead>
-              {% endif %}
-              <tbody>
-                {% for row in page.stats_table.rows %}
-                  <tr>
-                    {% for cell in row %}
-                      <td>{{ cell }}</td>
-                    {% endfor %}
-                  </tr>
-                {% endfor %}
-              </tbody>
-            </table>
-          </div>
-        {% endif %}
       </div>
-      <div class="col-12 col-md-6 mb-4">
-        <div class="content" style="margin-top: 2rem;">{{ content }}</div>
+    </div>
+    
+    <div class="row">
+      <div class="col-12">
+        <div class="project-main-content w-100" id="main-project-text" style="font-size: 1.4rem !important; color: #d9d9d9 !important;">{{ content }}</div>
       </div>
     </div>
     
@@ -165,6 +128,51 @@ body_classes: page-project
           </div>
         </div>
       {% endfor %}
+    {% endif %}
+    
+    {% if page.stats_table %}
+      <div class="row mt-5">
+        <div class="col-12 d-flex justify-content-center">
+          <div class="project-stats-table">
+            {% if page.stats_table.title %}
+              <div class="table-title">{{ page.stats_table.title }}</div>
+            {% endif %}
+            <table class="table table-sm">
+              {% if page.stats_table.dates %}
+              <thead>
+                <tr class="dates-row">
+                  {% if page.stats_table.dates.size == 1 %}
+                    <th class="date-cell" colspan="{{ page.stats_table.headers.size }}" style="text-align: center;">{{ page.stats_table.dates[0] }}</th>
+                  {% else %}
+                    {% for date in page.stats_table.dates %}
+                      <th class="date-cell" style="text-align: center;">{{ date }}</th>
+                    {% endfor %}
+                  {% endif %}
+                </tr>
+              </thead>
+              {% endif %}
+              {% if page.stats_table.headers %}
+              <thead{% unless page.stats_table.dates %} class="main-header"{% endunless %}>
+                <tr>
+                  {% for header in page.stats_table.headers %}
+                    <th style="text-align: center;">{{ header }}</th>
+                  {% endfor %}
+                </tr>
+              </thead>
+              {% endif %}
+              <tbody>
+                {% for row in page.stats_table.rows %}
+                  <tr>
+                    {% for cell in row %}
+                      <td style="text-align: center;">{{ cell }}</td>
+                    {% endfor %}
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     {% endif %}
   </div>
 </div>
