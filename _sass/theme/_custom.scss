@@ -356,7 +356,7 @@ h1, h2, h3, h4, h5, h6 {
 
 // Stats table styling
 .project-stats-table {
-    margin-top: 2rem; // Add space from image to better align with right column
+    margin-top: 1.5rem; // Add space from image to better align with right column
     
     .table-title {
         color: var(--color-base-text) !important;
@@ -375,18 +375,18 @@ h1, h2, h3, h4, h5, h6 {
         overflow: hidden;
         
         th {
-            background-color: #1a1a1a !important; // Using your base_bg_2_dark color
+            background-color: #1a1a1a !important; 
             color: var(--color-base-text) !important;
             border-color: #333 !important;
             font-weight: 600;
-            padding: 0.75rem !important;
+            padding: 0.5rem !important;  // Reduced from 0.75rem
         }
         
         td {
             background-color: #1a1a1a !important;
             color: var(--color-base-text) !important;
             border-color: #333 !important;
-            padding: 0.75rem !important;
+            padding: 0.5rem !important;  // Reduced from 0.75rem
             
             // Center exposure counts (second column)
             &:nth-child(2) {
@@ -394,15 +394,16 @@ h1, h2, h3, h4, h5, h6 {
             }
         }
         
-        // Expand table width and column sizing
+        // Make table more compact
         table-layout: fixed;
-        width: 100%;
-        min-width: 450px;
+        width: 50%;
+        min-width: 300px;  // Reduced from 450px for more compact table
+        margin: 0 auto;  // Center the table when width is less than 100%
         
         // Column widths for better spacing - prevent Integration Time wrapping
-        th:nth-child(1), td:nth-child(1) { width: 28%; } // Filter
-        th:nth-child(2), td:nth-child(2) { width: 22%; } // Exposures
-        th:nth-child(3), td:nth-child(3) { width: 50%; } // Integration Time 
+        th:nth-child(1), td:nth-child(1) { width: 21%; } // Filter
+        th:nth-child(2), td:nth-child(2) { width: 16.5%; } // Exposures
+        th:nth-child(3), td:nth-child(3) { width: 37.5%; } // Integration Time 
         
         // Mobile-specific adjustments
         @media (max-width: 767px) {
@@ -471,14 +472,14 @@ h1, h2, h3, h4, h5, h6 {
         }
     }
     
-    // Main project content styling - target the actual rendered content
+    
     .project-main-content {
         font-size: 1.4rem !important;
         color: #d9d9d9 !important;
         line-height: 1.4 !important;
     }
     
-    // Target all possible elements that could contain the markdown content
+    
     .project-main-content p,
     .project-main-content div,
     .project-main-content span {

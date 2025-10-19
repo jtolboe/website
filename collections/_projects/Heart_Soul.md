@@ -30,7 +30,7 @@ gallery_limit: 1
 detail_sections:
   - image: "/assets/images/gen/projects/melotte.jpg"
     title: "Melotte 15"
-    description: "A closer look at the central star-forming region within the Heart Nebula, containing some 'young' bright stars, some of which are an estimates 50 times our Suns mass."
+    description: "A closer look at the central star-forming region within the Heart Nebula, containing 'young' bright stars, some of which are an estimated 50 times our Suns mass."
     layout: "left"  
     width: "50%"  
   - image: "/assets/images/gen/projects/fishhead.jpg"
@@ -38,6 +38,11 @@ detail_sections:
     description: "IC 1795, known as the Fish Head nebula, a smaller part of the larger Heart nebula structure."
     layout: "left"  
     width: "50%"   
+  - image: "/assets/images/gen/projects/maffei.jpg"
+    title: "Maffei 1 & 2"
+    description: "Two galaxies that appear near the Heart and Soul as seen from Earth. They are both around 10 million light years away. "
+    layout: "left"  
+    width: "50%"  
 ---
 
-The Heart and Soul nebulae lie in the constellation of Cassiopeia, about 7,500 light years from Earth. Together across this frame, they span roughly more than 600 light years in distance. At the bottom edge of the frame, right of center, are also the galaxies known as Maffei 1 and Maffei 2. Test
+The Heart and Soul Nebulae are located in the constellation Cassiopeia, approximately 7,500 light-years from Earth. Together, they cover a distance of more than 600 light-years across this frame. At the bottom edge of the frame, to the right of center, you can also see the galaxies known as Maffei 1 and Maffei 2.
