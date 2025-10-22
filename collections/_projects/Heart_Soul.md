@@ -45,4 +45,6 @@ detail_sections:
     width: "50%"  
 ---
 
-The Heart and Soul Nebulae are located in the constellation Cassiopeia, approximately 7,500 light-years from Earth. Together, they cover a distance of more than 600 light-years across this frame. At the bottom edge of the frame, to the right of center, you can also see the galaxies known as Maffei 1 and Maffei 2.
+The Heart and Soul Nebulae, IC 1805 and 1848 respectively, are located in the constellation Cassiopeia, approximately 7,500 light-years from Earth. Together, they cover a distance of more than 600 light-years across this frame. At the bottom edge of the frame, to the right of center, you can also see the galaxies known as Maffei 1 and Maffei 2.
+
+This image is a three-panel mosaic using only broadband filters, approximating natural color, as opposed to the more common false color renditions of emission nebulae, where narrowband filters are used to isolate the specific emission lines and map these to the Red, Green, and Blue color channels that comprise digital images.

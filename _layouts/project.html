@@ -64,71 +64,9 @@ body_classes: page-project
     
     <div class="row">
       <div class="col-12">
-        <div class="project-main-content w-100" id="main-project-text" style="font-size: 1.4rem !important; color: #d9d9d9 !important;">{{ content }}</div>
+        <div class="project-main-content w-100" id="main-project-text" style="font-size: 1.2rem !important; color: #d9d9d9 !important;">{{ content }}</div>
       </div>
     </div>
-    
-    {% if page.detail_sections %}
-      {% for section in page.detail_sections %}
-        <div class="detail-section mt-5">
-          {% if section.title %}
-            <div class="row">
-              <div class="col-12">
-                <h3 class="detail-section-title{% if section.layout == 'right' %} text-end{% elsif section.layout == 'left' %} text-start{% else %} text-center{% endif %}">{{ section.title }}</h3>
-              </div>
-            </div>
-          {% endif %}
-          
-          <div class="row">
-            {% if section.layout == "right" %}
-              <!-- Description on left, image on right -->
-              {% assign text_cols = 4 %}
-              {% assign image_cols = 8 %}
-              {% if section.width == "50%" %}
-                {% assign text_cols = 6 %}
-                {% assign image_cols = 6 %}
-              {% elsif section.width == "75%" %}
-                {% assign text_cols = 3 %}
-                {% assign image_cols = 9 %}
-              {% endif %}
-              
-              <div class="col-12 col-md-{{ text_cols }} mb-4">
-                <div class="detail-content">
-                  <p>{{ section.description }}</p>
-                </div>
-              </div>
-              <div class="col-12 col-md-{{ image_cols }} mb-4">
-                <div class="detail-image">
-                  <img src="{{ section.image | relative_url }}" class="img-fluid" alt="{{ section.title }}">
-                </div>
-              </div>
-            {% else %}
-              <!-- Image on left, description on right (default) -->
-              {% assign text_cols = 8 %}
-              {% assign image_cols = 4 %}
-              {% if section.width == "50%" %}
-                {% assign text_cols = 6 %}
-                {% assign image_cols = 6 %}
-              {% elsif section.width == "75%" %}
-                {% assign text_cols = 3 %}
-                {% assign image_cols = 9 %}
-              {% endif %}
-              
-              <div class="col-12 col-md-{{ image_cols }} mb-4">
-                <div class="detail-image">
-                  <img src="{{ section.image | relative_url }}" class="img-fluid" alt="{{ section.title }}">
-                </div>
-              </div>
-              <div class="col-12 col-md-{{ text_cols }} mb-4">
-                <div class="detail-content">
-                  <p>{{ section.description }}</p>
-                </div>
-              </div>
-            {% endif %}
-          </div>
-        </div>
-      {% endfor %}
-    {% endif %}
     
     {% if page.stats_table %}
       <div class="row mt-5">
@@ -171,6 +109,35 @@ body_classes: page-project
               </tbody>
             </table>
           </div>
+        </div>
+      </div>
+    {% endif %}
+    
+    {% if page.detail_sections %}
+      <div class="detail-sections-container mt-5">
+        <div class="row">
+          {% for section in page.detail_sections %}
+            <div class="col-12 col-md-6 mb-4">
+              <div class="detail-section">
+                <div class="detail-image mb-3">
+                  <img src="{{ section.image | relative_url }}" class="img-fluid" alt="{{ section.title }}">
+                </div>
+                {% if section.title %}
+                  <h3 class="detail-section-title text-center mb-2">{{ section.title }}</h3>
+                {% endif %}
+                <div class="detail-content text-center">
+                  <p>{{ section.description }}</p>
+                </div>
+              </div>
+            </div>
+            {% comment %}Add row break after every 2 items{% endcomment %}
+            {% assign index = forloop.index %}
+            {% assign remainder = index | modulo: 2 %}
+            {% if remainder == 0 and forloop.last == false %}
+              </div>
+              <div class="row">
+            {% endif %}
+          {% endfor %}
         </div>
       </div>
     {% endif %}
