@@ -115,30 +115,89 @@ body_classes: page-project
     
     {% if page.detail_sections %}
       <div class="detail-sections-container mt-5">
-        <div class="row">
+        {% assign has_full_width = false %}
+        {% for section in page.detail_sections %}
+          {% if section.layout == "full-width" %}
+            {% assign has_full_width = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        
+        {% if has_full_width %}
+          {% comment %}Mixed layout: handle full-width and grid sections separately{% endcomment %}
           {% for section in page.detail_sections %}
-            <div class="col-12 col-md-6 mb-4">
-              <div class="detail-section">
-                <div class="detail-image mb-3">
-                  <img src="{{ section.image | relative_url }}" class="img-fluid" alt="{{ section.title }}">
-                </div>
-                {% if section.title %}
-                  <h3 class="detail-section-title text-center mb-2">{{ section.title }}</h3>
-                {% endif %}
-                <div class="detail-content text-center">
-                  <p>{{ section.description }}</p>
+            {% if section.layout == "full-width" %}
+              <div class="row mb-5">
+                <div class="col-12">
+                  <div class="detail-section">
+                    {% if section.title %}
+                      <h3 class="detail-section-title text-center mb-3">{{ section.title }}</h3>
+                    {% endif %}
+                    <div class="detail-image mb-3">
+                      <img src="{{ section.image | relative_url }}" class="img-fluid" alt="{{ section.title }}">
+                    </div>
+                    <div class="detail-content text-center">
+                      <p>{{ section.description }}</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            {% comment %}Add row break after every 2 items{% endcomment %}
-            {% assign index = forloop.index %}
-            {% assign remainder = index | modulo: 2 %}
-            {% if remainder == 0 and forloop.last == false %}
-              </div>
-              <div class="row">
             {% endif %}
           {% endfor %}
-        </div>
+          
+          {% comment %}Handle any remaining grid items{% endcomment %}
+          {% assign grid_sections = page.detail_sections | where_exp: "section", "section.layout != 'full-width'" %}
+          {% if grid_sections.size > 0 %}
+            <div class="row">
+              {% for section in grid_sections %}
+                <div class="col-12 col-md-6 mb-4">
+                  <div class="detail-section">
+                    {% if section.title %}
+                      <h3 class="detail-section-title text-center mb-3">{{ section.title }}</h3>
+                    {% endif %}
+                    <div class="detail-image mb-3">
+                      <img src="{{ section.image | relative_url }}" class="img-fluid" alt="{{ section.title }}">
+                    </div>
+                    <div class="detail-content text-center">
+                      <p>{{ section.description }}</p>
+                    </div>
+                  </div>
+                </div>
+                {% assign index = forloop.index %}
+                {% assign remainder = index | modulo: 2 %}
+                {% if remainder == 0 and forloop.last == false %}
+                  </div>
+                  <div class="row">
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+        {% else %}
+          {% comment %}Default grid layout for all sections{% endcomment %}
+          <div class="row">
+            {% for section in page.detail_sections %}
+              <div class="col-12 col-md-6 mb-4">
+                <div class="detail-section">
+                  {% if section.title %}
+                    <h3 class="detail-section-title text-center mb-3">{{ section.title }}</h3>
+                  {% endif %}
+                  <div class="detail-image mb-3">
+                    <img src="{{ section.image | relative_url }}" class="img-fluid" alt="{{ section.title }}">
+                  </div>
+                  <div class="detail-content text-center">
+                    <p>{{ section.description }}</p>
+                  </div>
+                </div>
+              </div>
+              {% assign index = forloop.index %}
+              {% assign remainder = index | modulo: 2 %}
+              {% if remainder == 0 and forloop.last == false %}
+                </div>
+                <div class="row">
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
       </div>
     {% endif %}
   </div>
