@@ -99,12 +99,23 @@ body_classes: page-project
               </thead>
               {% endif %}
               <tbody>
+                {% assign telescope_row = page.stats_table.rows | where_exp: "row", "row[0] contains 'Telescope'" | first %}
+                {% assign camera_row = page.stats_table.rows | where_exp: "row", "row[0] contains 'Camera'" | first %}
+                
                 {% for row in page.stats_table.rows %}
-                  <tr>
-                    {% for cell in row %}
-                      <td style="text-align: center;">{{ cell }}</td>
-                    {% endfor %}
-                  </tr>
+                  {% if row[0] contains 'Telescope' or row[0] contains 'Camera' %}
+                    <tr class="equipment-row">
+                      {% for cell in row %}
+                        <td style="text-align: center;">{{ cell }}</td>
+                      {% endfor %}
+                    </tr>
+                  {% else %}
+                    <tr>
+                      {% for cell in row %}
+                        <td style="text-align: center;">{{ cell }}</td>
+                      {% endfor %}
+                    </tr>
+                  {% endif %}
                 {% endfor %}
               </tbody>
             </table>

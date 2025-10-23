@@ -437,6 +437,35 @@ h1, h2, h3, h4, h5, h6 {
                 border-bottom: 2px solid #333 !important;
             }
         }
+        
+        // Equipment rows styling (at bottom of table)
+        .equipment-row {
+            border-top: 2px solid #444 !important; // Strong border above equipment section
+            
+            td {
+                background-color: #0f0f0f !important; // Darker background to distinguish from filter data
+                padding: 0.6rem 0.5rem !important;
+                font-size: 0.9rem;
+                border-color: #444 !important;
+                
+                &:first-child {
+                    font-weight: 600;
+                    color: #d1d0d0 !important; // Muted color for equipment labels
+                }
+                
+                &:not(:first-child) {
+                    color: #e0e0e0 !important; // Slightly brighter for equipment values
+                    font-weight: 500;
+                }
+            }
+            
+            // Add spacing before first equipment row
+            &:first-of-type {
+                td {
+                    padding-top: 0.8rem !important;
+                }
+            }
+        }
     }
 }
 
