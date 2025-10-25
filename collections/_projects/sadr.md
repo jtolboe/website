@@ -8,12 +8,20 @@ thumbnail: "/assets/images/gen/projects/sadr_thumb.jpg"
 image: "/assets/images/gen/projects/project-1-2.webp"
 categories: 
 tags: ["Nebula"]
-client: "IC 1318"
-client_label: "Target"
-role: "Lum, Red, Green, Blue"
-role_label: "Filters"
-time: "12 hours"
-time_label: "Integration"
+
+stats_table:
+  title: "Acquisition"
+  dates: ["August 13 - August 16, 2023"]
+  headers: ["Filter", "Exposures", "Integration Time"]
+  rows:
+    - ["Luminance", "135", "6.7 hours"]
+    - ["Red", "35", "1.7 hours"] 
+    - ["Green", "34", "1.6 hours"]
+    - ["Blue", "36", "1.7 hours"]
+    - ["Total", "", "11.7 hours"]
+    - ["Telescope", "", "Skywatcher Esprit 80"]
+    - ["Camera", "", "RisingCam ATR3-26000KMA"]
+
 gallery:
   - image: "/assets/images/gen/projects/sadr_page.jpg"
     caption: ""
@@ -21,3 +29,4 @@ gallery:
 gallery_limit: 2
 ---
 
+Description

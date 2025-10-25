@@ -8,12 +8,19 @@ thumbnail: "/assets/images/gen/projects/tulip_thumb.jpg"
 image: "/assets/images/gen/projects/project-1-2.webp"
 categories: 
 tags: ["Nebula", "False Color"]
-client: "Sh2-101 | WR-134"
-client_label: "Target"
-role: "Sii, Ha, Oiii"
-role_label: "Filters"
-time: "33 hours"
-time_label: "Integration"
+
+stats_table:
+  title: "Acquisition"
+  dates: ["July 13 - August 14, 2023"]
+  headers: ["Filter", "Exposures", "Integration Time"]
+  rows:
+    - ["SII", "68", "11 hours"] 
+    - ["Ha", "94", "8 hours"]
+    - ["OIII", "75", "8.7 hours"]
+    - ["Total", "237", "27.7 hours"]
+    - ["Telescope", "", "Skywatcher Esprit 80"]
+    - ["Camera", "", "RisingCam ATR3-26000KMA"]
+
 gallery:
   - image: "/assets/images/gen/projects/tulip_page.jpg"
     caption: ""
@@ -21,3 +28,4 @@ gallery:
 gallery_limit: 2
 ---
 
+Description
