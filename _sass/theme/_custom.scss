@@ -375,7 +375,7 @@ h1, h2, h3, h4, h5, h6 {
         overflow: hidden;
         
         th {
-            background-color: #1a1a1a !important; 
+            background-color: #2a2a2a !important; // Lighter than table cells for distinction
             color: var(--color-base-text) !important;
             border-color: #333 !important;
             font-weight: 600;
@@ -482,9 +482,14 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .detail-image {
+        text-align: center; // Center images that don't span full width
+        
         img {
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            max-width: 100%;
+            height: auto;
+            display: inline-block; // Allows centering when not full width
         }
     }
     

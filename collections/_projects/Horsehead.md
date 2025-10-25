@@ -8,12 +8,20 @@ thumbnail: "/assets/images/gen/projects/horsehead_thumb.jpg"
 image: "/assets/images/gen/projects/project-1-2.webp"
 categories: 
 tags: ["Nebula"]
-client: "Barnard 33 | NGC 2024"
-client_label: "Target"
-role: "Lum, Red, Green, Blue"
-role_label: "Filters"
-time: "7 hours"
-time_label: "Integration"
+
+stats_table:
+  title: "Acquisition"
+  dates: ["December 18 2022 - February 13, 2023"]
+  headers: ["Filter", "Exposures", "Integration Time"]
+  rows:
+    - ["Luminance", "101", "3.5 hours"]
+    - ["Red", "22", "1 hours"] 
+    - ["Green", "24", "1 hours"]
+    - ["Blue", "21", "1 hours"]
+    - ["Total", "168", "6.5 hours"]
+    - ["Telescope", "", "Skywatcher Esprit 80"]
+    - ["Camera", "", "RisingCam ATR3-26000KMA"]
+
 gallery:
   - image: "/assets/images/gen/projects/horsehead_page.jpg"
     caption: ""
@@ -21,3 +29,4 @@ gallery:
 gallery_limit: 2
 ---
 
+The Horsehead Nebula

@@ -6,14 +6,18 @@ date: 2022-09-02T10:20:00Z
 weight: 1
 thumbnail: "/assets/images/gen/projects/veil_thumb.jpg"
 image: 
-categories: 
-tags: ["Nebula"]
-client: "NGC 6960 | NGC 6992"
-client_label: "Target"
-role: "Ha, Oiii"
-role_label: "Filters"
-time: "23 hours"
-time_label: "Integration"
+ 
+stats_table:
+  title: "Acquisition"
+  dates: ["August 16 - October 14, 2022"]
+  headers: ["Filter", "Exposures", "Integration Time"]
+  rows:
+    - ["Ha", "120", "12 hours"]
+    - ["OIII", "110", "11 hours"]
+    - ["Total", "130", "23 hours"]
+    - ["Telescope", "", "Skywatcher Esprit 80"]
+    - ["Camera", "", "RisingCam ATR3-26000KMA"]
+
 gallery:
   - image: "/assets/images/gen/projects/veil_page.jpg"
     caption: ""
