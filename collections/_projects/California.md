@@ -8,12 +8,26 @@ thumbnail: "/assets/images/gen/projects/cali_thumb.jpg"
 image: "/assets/images/gen/projects/project-1-2.webp"
 categories: 
 tags: ["Nebula"]
-client: "NGC 1499"
-client_label: "Target"
-role: "Lum, Red, Green, Blue"
-role_label: "Filters"
-time: "43 hours"
-time_label: "Integration"
+
+stats_table:
+  title: "Acquisition"
+  dates: ["October 10 - November 12, 2023"]
+  headers: ["Filter", "Exposures", "Integration Time"]
+  rows:
+    - ["Luminance", "485", "24.2 hours"]
+    - ["Red", "126", "6.3 hours"] 
+    - ["Green", "123", "6.1 hours"]
+    - ["Blue", "130", "6.5 hours"]
+    - ["Total", "", "43.1 hours"]
+    - ["Telescope", "", "Skywatcher Esprit 80"]
+    - ["Camera", "", "RisingCam ATR3-26000KMA"]
+
+detail_sections:
+  - image: "/assets/images/gen/projects/cali2.jpg"
+    title: "Xi Persei"
+    description: "This star"
+    layout: "full-width"
+
 gallery:
   - image: "/assets/images/gen/projects/cali_page.jpg"
     caption: ""
@@ -21,3 +35,4 @@ gallery:
 gallery_limit: 2
 ---
 
+Description

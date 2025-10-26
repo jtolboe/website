@@ -8,12 +8,21 @@ thumbnail: "/assets/images/gen/projects/wolfs_thumb.jpg"
 image: "/assets/images/gen/projects/project-1-2.webp"
 categories: 
 tags: ["Nebula"]
-client: "vDb 155 | LDN 1235"
-client_label: "Target"
-role: "Lum, Red, Green, Blue"
-role_label: "Filters"
-time: "41 hours"
-time_label: "Integration"
+
+stats_table:
+  title: "Acquisition"
+  dates: ["August 16- September 26, 2023"]
+  headers: ["Filter", "Exposures", "Integration Time"]
+  rows:
+    - ["Ha", "138", "16 hours"]
+    - ["Luminance", "320", "16 hours"]
+    - ["Red", "59", "3 hours"] 
+    - ["Green", "60", "3 hours"]
+    - ["Blue", "58", "3 hours"]
+    - ["Total", "", "41 hours"]
+    - ["Telescope", "", "Skywatcher Esprit 80"]
+    - ["Camera", "", "RisingCam ATR3-26000KMA"]
+
 gallery:
   - image: "/assets/images/gen/projects/wolfs_page.jpg"
     caption: ""

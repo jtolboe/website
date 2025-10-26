@@ -8,12 +8,21 @@ thumbnail: "/assets/images/gen/projects/jelly_thumb.jpg"
 image: "/assets/images/gen/projects/project-1-2.webp"
 categories: 
 tags: ["Nebula"]
-client: "IC 443"
-client_label: "Target"
-role: "Lum, Red, Green, Blue"
-role_label: "Filters"
-time: "7 hours"
-time_label: "Integration"
+
+stats_table:
+  title: "Acquisition"
+  dates: ["October 31 2023 - February 16, 2024"]
+  headers: ["Filter", "Exposures", "Integration Time"]
+  rows:
+    - ["Luminance", "61", "2 hours"]
+    - ["Red", "16", ".5 hours"] 
+    - ["Green", "18", ".5 hours"]
+    - ["Blue", "17", ".5 hours"]
+    - ["Ha", "10", "1.7 hours"]
+    - ["Total", "", "4.2 hours"]
+    - ["Telescope", "", "Skywatcher Esprit 80"]
+    - ["Camera", "", "RisingCam ATR3-26000KMA"]
+
 gallery:
   - image: "/assets/images/gen/projects/jelly_page.jpg"
     caption: ""
