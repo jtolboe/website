@@ -8,12 +8,17 @@ thumbnail: "/assets/images/gen/projects/core_thumb.jpg"
 image: 
 categories: 
 tags: [""]
-client: "Milkyway Core"
-client_label: "Target"
-role: "None"
-role_label: "Filters"
-time: "2 hours"
-time_label: "Integration"
+
+stats_table:
+  title: "Acquisition"
+  dates: ["September 14 2022"]
+  headers: ["Filter", "Exposures", "Integration Time"]
+  rows:
+    - ["None", "60", "2 hours"] 
+    - ["Total", "", "2 hours"]
+    - ["Lens", "", "Rokinon 135mm 2.0"]
+    - ["Camera", "", "Sony A7III"]
+
 gallery:
   - image: "/assets/images/gen/projects/core_page.jpg"
     caption: ""
