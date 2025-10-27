@@ -28,4 +28,3 @@ gallery:
 gallery_limit: 2
 ---
 
-Description

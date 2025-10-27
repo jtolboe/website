@@ -68,62 +68,6 @@ body_classes: page-project
       </div>
     </div>
     
-    {% if page.stats_table %}
-      <div class="row mt-5">
-        <div class="col-12 d-flex justify-content-center">
-          <div class="project-stats-table">
-            {% if page.stats_table.title %}
-              <div class="table-title">{{ page.stats_table.title }}</div>
-            {% endif %}
-            <table class="table table-sm">
-              {% if page.stats_table.dates %}
-              <thead>
-                <tr class="dates-row">
-                  {% if page.stats_table.dates.size == 1 %}
-                    <th class="date-cell" colspan="{{ page.stats_table.headers.size }}" style="text-align: center;">{{ page.stats_table.dates[0] }}</th>
-                  {% else %}
-                    {% for date in page.stats_table.dates %}
-                      <th class="date-cell" style="text-align: center;">{{ date }}</th>
-                    {% endfor %}
-                  {% endif %}
-                </tr>
-              </thead>
-              {% endif %}
-              {% if page.stats_table.headers %}
-              <thead{% unless page.stats_table.dates %} class="main-header"{% endunless %}>
-                <tr>
-                  {% for header in page.stats_table.headers %}
-                    <th style="text-align: center;">{{ header }}</th>
-                  {% endfor %}
-                </tr>
-              </thead>
-              {% endif %}
-              <tbody>
-                {% assign telescope_row = page.stats_table.rows | where_exp: "row", "row[0] contains 'Telescope'" | first %}
-                {% assign camera_row = page.stats_table.rows | where_exp: "row", "row[0] contains 'Camera'" | first %}
-                
-                {% for row in page.stats_table.rows %}
-                  {% if row[0] contains 'Telescope' or row[0] contains 'Camera' %}
-                    <tr class="equipment-row">
-                      {% for cell in row %}
-                        <td style="text-align: center;">{{ cell }}</td>
-                      {% endfor %}
-                    </tr>
-                  {% else %}
-                    <tr>
-                      {% for cell in row %}
-                        <td style="text-align: center;">{{ cell }}</td>
-                      {% endfor %}
-                    </tr>
-                  {% endif %}
-                {% endfor %}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    {% endif %}
-    
     {% if page.detail_sections %}
       <div class="detail-sections-container mt-5">
         {% assign has_full_width = false %}
@@ -209,6 +153,63 @@ body_classes: page-project
             {% endfor %}
           </div>
         {% endif %}
+      </div>
+    {% endif %}
+
+    {% if page.stats_table %}
+      <div class="row mt-5">
+        <div class="col-12 d-flex justify-content-center">
+          <div class="project-stats-table">
+            {% if page.stats_table.title %}
+              <div class="table-title">{{ page.stats_table.title }}</div>
+            {% endif %}
+            <table class="table table-sm">
+              {% if page.stats_table.dates %}
+              <thead>
+                <tr class="dates-row">
+                  {% if page.stats_table.dates.size == 1 %}
+                    <th class="date-cell" colspan="{{ page.stats_table.headers.size }}" style="text-align: center;">{{ page.stats_table.dates[0] }}</th>
+                  {% else %}
+                    {% for date in page.stats_table.dates %}
+                      <th class="date-cell" style="text-align: center;">{{ date }}</th>
+                    {% endfor %}
+                  {% endif %}
+                </tr>
+              </thead>
+              {% endif %}
+              {% if page.stats_table.headers %}
+              <thead{% unless page.stats_table.dates %} class="main-header"{% endunless %}>
+                <tr>
+                  {% for header in page.stats_table.headers %}
+                    <th style="text-align: center;">{{ header }}</th>
+                  {% endfor %}
+                </tr>
+              </thead>
+              {% endif %}
+              <tbody>
+                {% assign telescope_row = page.stats_table.rows | where_exp: "row", "row[0] contains 'Telescope'" | first %}
+                {% assign camera_row = page.stats_table.rows | where_exp: "row", "row[0] contains 'Camera'" | first %}
+                {% assign lens_row = page.stats_table.rows | where_exp: "row", "row[0] contains 'Lens'" | first %}
+                
+                {% for row in page.stats_table.rows %}
+                  {% if row[0] contains 'Telescope' or row[0] contains 'Camera' or row[0] contains 'Lens' %}
+                    <tr class="equipment-row">
+                      {% for cell in row %}
+                        <td style="text-align: center;">{{ cell }}</td>
+                      {% endfor %}
+                    </tr>
+                  {% else %}
+                    <tr>
+                      {% for cell in row %}
+                        <td style="text-align: center;">{{ cell }}</td>
+                      {% endfor %}
+                    </tr>
+                  {% endif %}
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     {% endif %}
   </div>

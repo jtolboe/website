@@ -28,5 +28,3 @@ gallery:
   
 gallery_limit: 2
 ---
-
-NGC 1333

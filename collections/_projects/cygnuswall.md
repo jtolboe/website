@@ -28,3 +28,5 @@ gallery:
 gallery_limit: 2
 ---
 
+NGC 7000, known as the North America Nebula, is an emission nebula located in the constellation Cygnus, approximately 2,600 light-years away from Earth. It is named for its shape, which closely resembles the outline of the North American continent. The bright and intricate structure seen in the lower portion of this image is referred to as the Cygnus Wall.
+

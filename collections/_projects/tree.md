@@ -33,4 +33,3 @@ detail_sections:
     layout: "full-width"
 ---
 
-Cone Nebula description

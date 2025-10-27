@@ -22,7 +22,14 @@ stats_table:
 gallery:
   - image: "/assets/images/gen/projects/core_page.jpg"
     caption: ""
+
+detail_sections:
+  - image: "/assets/images/gen/projects/core_anno.jpg"
+    title: "Annotated Notable Objects"
+    description: ""
+    layout: "full-width"
   
 gallery_limit: 2
 ---
 
+The core of our galaxy. Countless stars among masses of dust thick enough to block the light from behind them. In the Summer months of the northern hemisphere, if you find yourself in sufficiently dark skies and look South, this structure is what you'd see rising out from the horizon. Although, with less detail and color than the long exposures that the camera sensor can gather. 

@@ -30,12 +30,12 @@ gallery_limit: 2
 detail_sections:
   - image: "/assets/images/gen/projects/ldn563_557.jpg"
     title: "LDN 563 | 557"
-    description: "Lynds Dark Neblulae"
+    description: ""
     layout: "full-width"
   - image: "/assets/images/gen/projects/sh2_64.jpg"
     title: "Sh2 64"
-    description: "Description"
+    description: ""
   - image: "/assets/images/gen/projects/vdb123.jpg"
     title: "vDb 123"
-    description: "Description"
+    description: ""
 ---
