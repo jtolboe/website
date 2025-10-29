@@ -25,7 +25,7 @@ stats_table:
 detail_sections:
   - image: "/assets/images/gen/projects/cali2.jpg"
     title: "Xi Persei"
-    description: "This star"
+    description: ""
     layout: "full-width"
 
 gallery:

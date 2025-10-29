@@ -29,7 +29,7 @@ gallery_limit: 2
 detail_sections:
   - image: "/assets/images/gen/projects/variable.jpg"
     title: "Hubble's Variable Nebula | NGC 2261"
-    description: "This is Hubble's variable nebula"
+    description: ""
     layout: "full-width"
 ---
 
