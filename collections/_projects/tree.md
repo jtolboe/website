@@ -1,7 +1,7 @@
 ---
 layout: project
-title: "Christmas Tree Cluster"
-description: "Christmas Tree Cluster of Monoceros"
+title: "Cone Nebula"
+description: "Cone Nebula |  NGC 2264"
 date: 2023-01-03T10:20:00Z
 weight: 1
 thumbnail: "/assets/images/gen/projects/tree_thumb.jpg"
@@ -33,3 +33,4 @@ detail_sections:
     layout: "full-width"
 ---
 
+The Cone Nebula, seen here as the cone-shaped structure in the upper left area of the frame, is an emission region 2,700 light-years away in the constellation Monoceros. NGC 2264 is the designation for both it and the Christmas Tree Cluster of stars. Very near the center, the circular pale region is known as the Fox Fur nebula. And near the very left edge of the frame, we can observe a very small object, Hubble's Variable Nebula, NGC 2261.

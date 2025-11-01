@@ -28,3 +28,4 @@ gallery:
   
 gallery_limit: 2
 ---
+The Embryo nebula, NGC 1333, is located in the constellation Perseus and is part of the greater Perseus molecular cloud. It is a highly studied region for star formation

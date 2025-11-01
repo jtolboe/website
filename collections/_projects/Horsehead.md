@@ -28,5 +28,5 @@ gallery:
   
 gallery_limit: 2
 ---
-
-The Horsehead Nebula
+Barnard 33, the iconic Horsehead Nebula, is located about 1400 light-years away in the constellation Orion. While the Horsehead itself is considered a dark nebula, a cloud of gas and dust not emitting its own light, it features a backdrop of ionized hydrogen alpha, providing contrast to the shape of a horse's head. To the left in this image is also the Flame Nebula, NGC 2024. 
+The very bright star above the Flame nebula is the star Alnitak, the easternmost star of Orion's belt.

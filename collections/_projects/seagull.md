@@ -27,3 +27,4 @@ gallery:
   
 gallery_limit: 2
 ---
+IC 2177 is an emission nebula 3600 light-years from Earth in Monoceros. At the very center of this image, you can see the star FN Canis Majoris, which is believed to be moving through the nebula region at high speeds, creating the bow shock effect seen here.
