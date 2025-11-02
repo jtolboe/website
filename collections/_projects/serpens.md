@@ -30,7 +30,7 @@ gallery_limit: 2
 detail_sections:
   - image: "/assets/images/gen/projects/ldn563_557.jpg"
     title: "LDN 563 | 557"
-    description: ""
+    description: "The dark streak, just to the right of center, is Lynd's Dark Nebulae 563 and 567. On the left side of this close-up, while there's no particular object, I enjoy looking at the sheer density of stars, thinking about how, on average, for most systems we've studied so far, there is at least one exoplanet per star system. In the full image, the software was able to identify 100,000 distinguishable stars. Just 0.0000005% of the estimated amount in our galaxy."
     layout: "full-width"
   - image: "/assets/images/gen/projects/sh2_64.jpg"
     title: "Sh2 64"
@@ -39,3 +39,4 @@ detail_sections:
     title: "vDb 123"
     description: ""
 ---
+Serpens is unique in that it's the only non-contiguous constellation. It is split into two parts: Serpens Caput, the head, and Serpens Cauda, the tail. In between the Cauda's two northernmost stars, Alya and Eta Serpentis, lies this beautiful region full of dust and stars. 
