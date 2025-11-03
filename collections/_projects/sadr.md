@@ -28,3 +28,4 @@ gallery:
   
 gallery_limit: 2
 ---
+The large, bright star in this image, Gamma Cygni, is named Sadr. It is the central star of the constellation of Cygnus. Surrounding it is bright ionized hydrogen gas, forming a region often referred to as the Butterfly Nebula - IC 1318. Though there is also a different Butterfly Nebula, NGC 6302.
