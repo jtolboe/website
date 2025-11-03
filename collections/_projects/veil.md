@@ -14,7 +14,7 @@ stats_table:
   rows:
     - ["Ha", "120", "12 hours"]
     - ["OIII", "110", "11 hours"]
-    - ["Total", "130", "23 hours"]
+    - ["Total", "", "23 hours"]
     - ["Telescope", "", "Skywatcher Esprit 80"]
     - ["Camera", "", "RisingCam ATR3-26000KMA"]
 
