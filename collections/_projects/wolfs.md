@@ -29,3 +29,4 @@ gallery:
   
 gallery_limit: 2
 ---
+vdB 152, also known as the Wolf's Cave Nebula, is a dark and reflection nebula in Cepheus, visible here as a pillar of dust topped with the blue glow of reflection, accompanied by a streak of hydrogen glowing in the background. At the bottom of the image is the Dark Shark Nebula, LDN 1235.

@@ -19,7 +19,7 @@ stats_table:
     - ["Green", "18", ".5 hours"]
     - ["Blue", "17", ".5 hours"]
     - ["Ha", "10", "1.7 hours"]
-    - ["Total", "", "4.2 hours"]
+    - ["Total", "", "5.2 hours"]
     - ["Telescope", "", "Skywatcher Esprit 80"]
     - ["Camera", "", "RisingCam ATR3-26000KMA"]
 
@@ -29,3 +29,4 @@ gallery:
   
 gallery_limit: 2
 ---
+IC 443, the Jellyfish Nebula, is a supernova remnant in Gemini, about 5000 light-years from Earth. The supernova responsible for it is estimated to have occurred 30,000 years ago. The large orange stars here are named Propus and Tejat from left to right, respectively. The reflection nebula just under the center of the frame is IC 444. 

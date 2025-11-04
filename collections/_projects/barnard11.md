@@ -30,3 +30,5 @@ gallery:
   
 gallery_limit: 2
 ---
+Near the constellation of Camelopardalis, these dark clouds of dust in deep space represent several different objects within Barnard's catalog, and are within an area known as the Southern Giraffe Clouds. Accenting the background of red hydrogen emission in the top left of the image is the star BE Camelopardalis at around 800 light years form Earth. The streaks of blue ionized oxygen throughout the frame are supernova remnant (SNR G150.3+4.5) dubbed Thor's Ligtning . 
+There are a number of dark nebulae targets that feature Hydrogen alpha emission that can be shot with narrowband to enhance the broadband composition, such as the Ha in this image. It's a bit more rare to also be able to include such distinctive Oxygen III, which is what makes this region so neat. 

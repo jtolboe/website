@@ -27,6 +27,13 @@ gallery:
   - image: "/assets/images/gen/projects/vdb15_page.jpg"
     caption: ""
   
+detail_sections:
+  - image: "/assets/images/gen/projects/vdb15_1_1.jpg"
+    title: "1:1"
+    layout: "full-width"
+    description: ""
+
 gallery_limit: 2
 ---
 
+VdB 14/15 are reflection nebulae 2600 light-years away in the constellation Camelopardalis. The stunning dust structure here is illuminated by the nearby supergiant star CE Cam. 
