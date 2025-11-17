@@ -18,7 +18,7 @@ stats_table:
     - ["Red", "22", "1 hours"] 
     - ["Green", "24", "1 hours"]
     - ["Blue", "21", "1 hours"]
-    - ["Total", "168", "6.5 hours"]
+    - ["Total", "", "6.5 hours"]
     - ["Telescope", "", "Skywatcher Esprit 80"]
     - ["Camera", "", "RisingCam ATR3-26000KMA"]
 

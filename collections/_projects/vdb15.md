@@ -30,8 +30,8 @@ gallery:
 detail_sections:
   - image: "/assets/images/gen/projects/vdb15_1_1.jpg"
     title: "1:1"
-    layout: "full-width"
     description: ""
+    layout: "full-width"
 
 gallery_limit: 2
 ---

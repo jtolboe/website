@@ -17,7 +17,7 @@ stats_table:
     - ["SII", "68", "11 hours"] 
     - ["Ha", "94", "8 hours"]
     - ["OIII", "75", "8.7 hours"]
-    - ["Total", "237", "27.7 hours"]
+    - ["Total", "", "27.7 hours"]
     - ["Telescope", "", "Skywatcher Esprit 80"]
     - ["Camera", "", "RisingCam ATR3-26000KMA"]
 
